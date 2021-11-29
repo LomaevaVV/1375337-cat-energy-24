@@ -23,13 +23,13 @@
         </button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
+            <a class="navigation__link navigation__link--current" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
       <form action="https://echo.htmlacademy.ru/" method="get" class="page_main__form form">
         <!-- Данные кота -->
         <fieldset class="form__fieldset fieldset">
-          <legend class="fieldset__legend visualy-hidden">Данные кота</legend>
+          <legend class="visualy-hidden">Данные кота</legend>
           <ul class="fieldset__list">
             <li class="fieldset__form-item form-item">
               <label class="form-item__label" for="cat-name">ИМЯ:*</label>
@@ -60,20 +60,20 @@
           </ul>
           <!-- Радиобаттон -->
           <ul class="fieldset__list">
-            <li class="fieldset__form-item form-item">
-              <input type="radio" class="form-item__input visually-hidden" name="weight-loss" checked>
-              <span class="control-mark"></span>
-              <span class="form-item__label">Похудение</span>
+            <li class="fieldset__checkbox checkbox">
+              <input type="radio" class="visually-hidden" name="weight-loss" id="weight-loss" checked>
+              <span class="checkbox__control-mark"></span>
+              <label class="checkbox__label" for="weight-loss">Похудение</label>
             </li>
-            <li class="fieldset__form-item form-item">
-              <input type="radio" class="form-item__input visually-hidden" name="weight-gain">
-              <span class="control-mark"></span>
-              <span class="form-item__label">Набор массы</span>
+            <li class="fieldset__checkbox checkbox">
+              <input type="radio" class="visually-hidden" name="weight-gain" id="weight-gain">
+              <span class="checkbox__control-mark"></span>
+              <label class="checkbox__label" for="weight-gain">Набор массы</label>
             </li>
-            <li class="fieldset__form-item form-item">
-              <input type="radio" class="form-item__input visually-hidden" name="weight-recommendation">
-              <span class="control-mark"></span>
-              <span class="form-item__label">Не знаю (Нужен ваш совет)</span>
+            <li class="fieldset__checkbox checkbox">
+              <input type="radio" class="visually-hidden" name="weight-recommendation" id="weight-recommendation">
+              <span class="checkbox__control-mark"></span>
+              <label class="checkbox__label" for="weight-recommendation">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
@@ -95,32 +95,33 @@
         <fieldset class="form__fieldset fieldset">
           <legend class="fieldset__legend">Комментарий</legend>
           <p>
-            <textarea class="fieldset__textarea">Расскажите обо всех повадках кота</textarea>
+            <label class="visualy-hidden" for="comment">Комментарий:</label>
+            <textarea class="fieldset__textarea" id="comment">Расскажите обо всех повадках кота</textarea>
           </p>
         </fieldset>
         <!-- Дополнительно -->
         <fieldset class="form__fieldset fieldset">
-          <legend class="fieldset__legend visualy-hidden">Дополнительно</legend>
+          <legend class="fieldset__legend">Дополнительно</legend>
           <ul class="fieldset__list">
-            <li class="fieldset__form-item form-item">
-              <input type="checkbox" class="form-item__input visually-hidden" name="sweetener" checked>
-              <span class="control-mark"></span>
-              <span class="form-item__label">Cахарозаменитель</span>
+            <li class="fieldset__checkbox checkbox">
+              <input type="checkbox" class="visually-hidden" name="sweetener" id="sweetener" checked>
+              <span class="checkbox__control-mark"></span>
+              <label class="checkbox__label" for="sweetener">Cахарозаменитель</label>
             </li>
-            <li class="fieldset__form-item form-item">
-              <input type="checkbox" class="form-item__input visually-hidden" name="water">
-              <span class="control-mark"></span>
-              <span class="form-item__label">Питьевая вода</span>
+            <li class="fieldset__checkbox checkbox">
+              <input type="checkbox" class="visually-hidden" name="water" id="water">
+              <span class="checkbox__control-mark"></span>
+              <label class="checkbox__label" for="water">Питьевая вода</label>
             </li>
-            <li class="fieldset__form-item form-item">
-              <input type="checkbox" class="form-item__input visually-hidden" name="milk">
-              <span class="control-mark"></span>
-              <span class="form-item__label">Молоко</span>
+            <li class="fieldset__checkbox checkbox">
+              <input type="checkbox" class="visually-hidden" name="milk" id="milk">
+              <span class="checkbox__control-mark"></span>
+              <label class="checkbox__label" for="milk">Молоко</label>
             </li>
-            <li class="fieldset__form-item form-item">
-              <input type="checkbox" class="form-item__input visualy-hidden" name="vitamins">
-              <span class="control-mark"></span>
-              <span class="form-item__label">Витамины</span>
+            <li class="fieldset__checkbox checkbox">
+              <input type="checkbox" class="visualy-hidden" name="vitamins" id="vitamins">
+              <span class="checkbox__control-mark"></span>
+              <label class="checkbox__label" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
