@@ -1,0 +1,39 @@
+.navigation {
+  width: 320px;
+  // Position закоментирован для тек удобства работы!
+  // position: absolute;
+  bottom: -205px;
+  display: flex;
+  // display: none;
+  background-color: $primary-background-color;
+}
+
+.navigation__list {
+  width: 100%;
+  padding: 0;
+  display: grid;
+  justify-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation__item {
+  width: 100%;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+.navigation__item:not(:last-child) {
+  border-bottom: 1px solid $navigation-border-color;
+}

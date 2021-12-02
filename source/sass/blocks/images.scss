@@ -1,0 +1,29 @@
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images__toggle-panel {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.images__toggle-text:not(:last-of-type) {
+  margin-right: 13px;
+}
+
+.images__toggle {
+  width: 86px;
+  height: 14px;
+  border: 1px solid $example-border-color;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: $primary-background-color;
+  margin-right: 13px;
+}

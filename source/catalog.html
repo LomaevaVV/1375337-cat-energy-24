@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page__body">
@@ -16,24 +17,24 @@
         <img class="logo__logo-text" src="img/logo/logo_text.svg" width="101" height="18" alt="Cat energy"
           aria-hidden="true" />
       </a>
-      <!-- Главная навигация -->
-      <nav class="page-header__navigation navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
+    <!-- Главная навигация -->
+    <nav class="page-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-main">
     <div class="page-main__wrapper wrapper">
@@ -58,7 +59,7 @@
             <dt class="feature__name">Цена</dt>
             <dd class="feature__value">700 Р.</dd>
           </dl>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button button--catalog">Заказать</a>
         </div>
         <div class="catalog__product product">
           <a class="product__link" href="#">
@@ -76,7 +77,7 @@
             <dt class="feature__name">Цена</dt>
             <dd class="feature__value">1000 Р.</dd>
           </dl>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button button--catalog">Заказать</a>
         </div>
         <div class="catalog__product product">
           <a class="product__link" href="#">
@@ -94,7 +95,7 @@
             <dt class="feature__name">Цена</dt>
             <dd class="feature__value">700 Р.</dd>
           </dl>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button button--catalog">Заказать</a>
         </div>
         <div class="catalog__product product">
           <a class="product__link" href="#">
@@ -112,7 +113,7 @@
             <dt class="feature__name">Цена</dt>
             <dd class="feature__value">1000 Р.</dd>
           </dl>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button button--catalog">Заказать</a>
         </div>
         <div class="catalog__product product">
           <a class="product__link" href="#">
@@ -130,7 +131,7 @@
             <dt class="feature__name">Цена</dt>
             <dd class="feature__value">700 Р.</dd>
           </dl>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button button--catalog">Заказать</a>
         </div>
         <div class="catalog__product product">
           <a class="product__link" href="#">
@@ -148,7 +149,7 @@
             <dt class="feature__name">Цена</dt>
             <dd class="feature__value">1000 Р.</dd>
           </dl>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button button--catalog">Заказать</a>
         </div>
         <div class="catalog__product product">
           <a class="product__link" href="#">
@@ -166,87 +167,88 @@
             <dt class="feature__name">Цена</dt>
             <dd class="feature__value">700 Р.</dd>
           </dl>
-          <a href="#" class="product__button button">Заказать</a>
+          <a href="#" class="product__button button button--catalog button button--catalog--catalog">Заказать</a>
         </div>
         <div class="catalog__show-more show-more">
           <h3 class="show-more__title">Показать еще 100500 товаров</h3>
           <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-          <button class="show-more__button button" type="button">Показать все</button>
+          <button class="show-more__button button button--catalog-more" type="button">Показать все</button>
         </div>
       </section>
       <!-- Дополнительные товары -->
       <section class="page-main__extra extra">
-        <h2 class="extra__title">Дополнительные товары</h2>
+        <h2 class="extra__section-title section-title">Дополнительные товары</h2>
         <ul class="extra__product-list">
           <li class="extra__product-extra product-extra">
             <a class="product-extra__link" href="#">
               <h3 class="product-extra__title">Сахарозаменитель</h3>
             </a>
             <dl class="product-extra__feature-extra feature-extra">
-              <dt class="visualy-hidden">Масса</dt>
+              <dt class="visually-hidden">Масса</dt>
               <dd class="feature-extra__value">1 упаковка (100 г)</dd>
-              <dt class="visualy-hidden">Цена</dt>
+              <dt class="visually-hidden">Цена</dt>
               <dd class="feature-extra__value">200 Р.</dd>
             </dl>
-            <a href="#" class="product-extra__button button">Заказать</a>
+            <a href="#" class="product-extra__button button button--catalog">Заказать</a>
           </li>
           <li class="extra__product-extra product-extra">
             <a class="product-extra__link" href="#">
               <h3 class="product-extra__title">Питьевая вода</h3>
             </a>
             <dl class="product-extra__feature-extra feature-extra">
-              <dt class="visualy-hidden">Масса</dt>
+              <dt class="visually-hidden">Масса</dt>
               <dd class="feature-extra__value">5 литров</dd>
-              <dt class="visualy-hidden">Цена</dt>
+              <dt class="visually-hidden">Цена</dt>
               <dd class="feature-extra__value">50 Р.</dd>
             </dl>
-            <a href="#" class="product-extra__button button">Заказать</a>
+            <a href="#" class="product-extra__button button button--catalog">Заказать</a>
           </li>
           <li class="extra__product-extra product-extra">
             <a class="product-extra__link" href="#">
               <h3 class="product-extra__title">Молоко</h3>
             </a>
             <dl class="product-extra__feature-extra feature-extra">
-              <dt class="visualy-hidden">Масса</dt>
+              <dt class="visually-hidden">Масса</dt>
               <dd class="feature-extra__value">1 литр</dd>
-              <dt class="visualy-hidden">Цена</dt>
+              <dt class="visually-hidden">Цена</dt>
               <dd class="feature-extra__value">100 Р.</dd>
             </dl>
-            <a href="#" class="product-extra__button button">Заказать</a>
+            <a href="#" class="product-extra__button button button--catalog">Заказать</a>
           </li>
           <li class="extra__product-extra product-extra">
             <a class="product-extra__link" href="#">
               <h3 class="product-extra__title">Витамины</h3>
             </a>
             <dl class="product-extra__feature-extra feature-extra">
-              <dt class="visualy-hidden">Масса</dt>
+              <dt class="visually-hidden">Масса</dt>
               <dd class="feature-extra__value">1 упаковка (30 г)</dd>
-              <dt class="visualy-hidden">Цена</dt>
+              <dt class="visually-hidden">Цена</dt>
               <dd class="feature-extra__value">300 Р.</dd>
             </dl>
-            <a href="#" class="product-extra__button button">Заказать</a>
-          </li>
-          <li class="extra__promo promo">
-            <h3 class="visually-hidden">Акция - Чехол в подарок</h3>
-            <p class="promo__slogan">Закажите все и получите чехол для кота в подарок!</p>
+            <a href="#" class="product-extra__button button button--catalog">Заказать</a>
           </li>
         </ul>
-      </section>
-      <!-- Контакты -->
-      <section class="page-main__contacts contacts">
-        <div class="contacts__wrapper wrapper">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+        <div class="extra__promo promo">
+          <h3 class="visually-hidden">Акция - Чехол в подарок</h3>
+          <p class="promo__slogan">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
         </div>
-        <!-- Реализовать интеграцию с картами -->
-        <div class="contacts__map map">
-          <img src="img/index/location_mobile.jpg" width="320" height="362"
-            alt="Отметка магазина на карте Санкт-Петербурга" class="map__image" />
-        </div>
+        </ul>
       </section>
     </div>
+    <!-- Контакты -->
+    <section class="page-main__contacts contacts">
+      <div class="contacts__wrapper wrapper">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <!-- Реализовать интеграцию с картами -->
+      <div class="contacts__map map">
+        <img src="img/index/location_mobile.jpg" width="320" height="362"
+          alt="Отметка магазина на карте Санкт-Петербурга" class="map__image" />
+      </div>
+    </section>
   </main>
   <!-- Подвал -->
   <footer class="page-footer">

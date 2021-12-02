@@ -1,0 +1,9 @@
+.social-list {
+  max-width: 281px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid $program-type-border-color;
+  margin: 0;
+}

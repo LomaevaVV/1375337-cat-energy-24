@@ -1,1 +1,33 @@
 // Начните писать стили здесь
+
+@import "global/global.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation.scss";
+@import "blocks/page-main.scss";
+@import "blocks/program.scss";
+@import "blocks/button.scss";
+@import "blocks/program-type.scss";
+@import "blocks/principles.scss";
+@import "blocks/section-title.scss";
+@import "blocks/example.scss";
+@import "blocks/result.scss";
+@import "blocks/images.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/title.scss";
+// form
+@import "blocks/form.scss";
+@import "blocks/fieldset.scss";
+// catalog
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/feature.scss";
+@import "blocks/show-more.scss";
+@import "blocks/extra.scss";
+@import "blocks/product-extra.scss";
+@import "blocks/feature-extra.scss";
+@import "blocks/promo.scss";

@@ -1,0 +1,23 @@
+.page-header {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $navigation-border-color;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  flex-wrap: wrap;
+  width: 191px;
+  justify-content: space-between;
+}
+
+.page-header__toggle {
+  max-height: 40px;
+  min-width: 24px;
+  background-color: $primary-background-color;
+}

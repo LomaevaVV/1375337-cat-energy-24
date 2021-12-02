@@ -1,0 +1,45 @@
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.result__group {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.result__name {
+  margin-right: 5px;
+}
+
+.result__name--low {
+  position: absolute;
+  bottom: -30px;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  color: $secondary-font-color;
+  text-align: center;
+}
+
+.result__value {
+  margin: 0;
+}
+
+.result__value--number {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.result__group--cost {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  display: flex;
+}

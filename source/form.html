@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page__body">
@@ -16,34 +17,34 @@
         <img class="logo__logo-text" src="img/logo/logo_text.svg" width="101" height="18" alt="Cat energy"
           aria-hidden="true" />
       </a>
-      <!-- Главная навигация -->
-      <nav class="page-header__navigation navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
+    <!-- Главная навигация -->
+    <nav class="page-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-main">
     <div class="page-main__wrapper wrapper">
       <h1 class="page-main__title title">Подбор программы</h1>
-      <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <h2 class="visualy-hidden">Анкета</h2>
+      <p class="page-main__description">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
+      <h2 class="visually-hidden">Анкета</h2>
       <form action="https://echo.htmlacademy.ru/" method="get" class="page-main__form form">
         <!-- Данные кота -->
         <fieldset class="form__fieldset fieldset">
-          <legend class="visualy-hidden">Данные кота</legend>
+          <legend class="visually-hidden">Данные кота</legend>
           <ul class="fieldset__list">
             <li class="fieldset__form-item form-item">
               <label class="form-item__label" for="cat-name">ИМЯ:*</label>
@@ -95,7 +96,7 @@
         <fieldset class="form__fieldset fieldset">
           <legend class="fieldset__legend">Комментарий</legend>
           <p>
-            <label class="visualy-hidden" for="comment">Комментарий:</label>
+            <label class="visually-hidden" for="comment">Комментарий:</label>
             <textarea class="fieldset__textarea" id="comment">Расскажите обо всех повадках кота</textarea>
           </p>
         </fieldset>
@@ -119,7 +120,7 @@
               <label class="checkbox__label" for="milk">Молоко</label>
             </li>
             <li class="fieldset__checkbox checkbox">
-              <input type="checkbox" class="visualy-hidden" name="vitamins" id="vitamins">
+              <input type="checkbox" class="visually-hidden" name="vitamins" id="vitamins">
               <span class="checkbox__control-mark"></span>
               <label class="checkbox__label" for="vitamins">Витамины</label>
             </li>

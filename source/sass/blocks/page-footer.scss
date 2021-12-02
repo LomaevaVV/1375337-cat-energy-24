@@ -1,0 +1,25 @@
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: 281px;
+  justify-items: center;
+  padding-bottom: 22px;
+}
+
+.page-footer__social-list {
+  width: 281px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-footer__logo {
+  width: 281px;
+  padding: 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $program-type-border-color;
+  justify-content: center;
+}
+
+.page-footer__copyright {
+  padding-top: 22px;
+}
