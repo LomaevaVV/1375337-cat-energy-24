@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -15,17 +15,17 @@
 }
 
 .result__name {
-  margin-right: 5px;
-}
-
-.result__name--low {
   position: absolute;
   bottom: -30px;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
-  color: $secondary-font-color;
+  color: $color-grey-700;
   text-align: center;
+}
+
+.result__name-cost {
+  margin-right: 5px;
 }
 
 .result__value {

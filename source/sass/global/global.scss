@@ -1,35 +1,3 @@
-// Colors
-$primary-font-color: #000000;
-$secondary-font-color: #444444;
-$primary-background-color: #ffffff;
-$program-type-background-color: #f2f2f2;
-$example-background-color: #eaeaea;
-$program-type-border-color: #d9d9d9;
-$background-elements-color: #68b738;
-$example-border-color: #cdcdcd;
-$navigation-border-color: #e6e6e6;
-$product-title-color: #222222;
-$product-border-color: #ebebeb;
-$show-more-title-color: #111111;
-
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-
 /*Sticky-footer -> height of page*/
 html {
   height: 100%;
@@ -37,17 +5,14 @@ html {
 
 body {
   min-height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: $Arial;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: $primary-font-color;
-  background-color: $primary-background-color;
-  width: 320px;
+  color: $color-black;
+  background-color: $color-white;
   margin: 0 auto;
-  // рамка для наглядности, потом УДАЛИТЬ
-  border: 1px solid $primary-font-color;
 }
 
 .visually-hidden {

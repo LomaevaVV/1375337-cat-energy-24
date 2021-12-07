@@ -1,6 +1,10 @@
-// Начните писать стили здесь
-
+//Globals
+@import "global/variables.scss";
+@import "global/fonts.scss";
 @import "global/global.scss";
+
+// Blocs
+// Index
 @import "blocks/wrapper.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
@@ -15,14 +19,17 @@
 @import "blocks/result.scss";
 @import "blocks/images.scss";
 @import "blocks/contacts.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";
 @import "blocks/title.scss";
-// form
+
+// Form
 @import "blocks/form.scss";
 @import "blocks/fieldset.scss";
-// catalog
+
+// Catalog
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
 @import "blocks/feature.scss";

@@ -1,22 +1,21 @@
 .page-footer__wrapper {
   display: grid;
-  grid-template-columns: 281px;
-  justify-items: center;
+  padding-top: 40px;
   padding-bottom: 22px;
+  background: $color-grey-100;
 }
 
 .page-footer__social-list {
-  width: 281px;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid $color-grey-500;
 }
 
 .page-footer__logo {
-  width: 281px;
   padding: 0;
   padding-bottom: 30px;
-  border-bottom: 1px solid $program-type-border-color;
+  border-bottom: 1px solid $color-grey-500;
   justify-content: center;
 }
 

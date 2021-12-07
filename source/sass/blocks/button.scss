@@ -1,16 +1,16 @@
 .button {
   display: flex;
-  width: 280px;
-  min-height: 40px;
-  background-color: $background-elements-color;
-  font-family: "Oswald", sans-serif;
+  background-color: $color-green-400;
+  font-family: $Oswald;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $primary-background-color;
+  color: $color-white;
   align-items: center;
   justify-content: center;
   border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .button--catalog {
@@ -21,6 +21,6 @@
 .button--catalog-more {
   font-size: 16px;
   line-height: 20px;
-  color: $secondary-font-color;
-  background-color: $program-type-background-color;
+  color: $color-grey-700;
+  background-color: $color-grey-100;
 }

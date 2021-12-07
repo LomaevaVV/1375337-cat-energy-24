@@ -1,20 +1,19 @@
 .fieldset {
-  border: 0 none;
-  font-family: "Oswald", sans-serif;
+  border: none;
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   padding: 0;
   padding-bottom: 20px;
-  border-bottom: 1px solid $navigation-border-color;
+  border-bottom: 1px solid $color-grey-300;
   margin-bottom: 20px;
 }
 
 .fieldset__legend {
   text-transform: none;
   margin-bottom: 35px;
-  max-width: 190px;
   font-size: 24px;
   line-height: 26px;
 }
@@ -27,20 +26,22 @@
 }
 
 .fieldset__list:not(:last-child) {
-  border-bottom: 1px solid $navigation-border-color;
+  border-bottom: 1px solid $color-grey-300;
   margin-bottom: 13px;
 }
 
 .fieldset__form-item {
-  width: 291px;
-  color: $secondary-font-color;
+  color: $color-grey-700;
 }
 
 .form-item__label {
   margin-right: 13px;
 }
 
-.fieldset__form-item:not(:last-child),
+.fieldset__form-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
 .fieldset__checkbox:not(:last-child) {
   margin-bottom: 13px;
 }

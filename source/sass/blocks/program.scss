@@ -1,13 +1,12 @@
 .program {
-  font-family: "Oswald", sans-serif;
-  background-image: url("..//img/index/index-background.jpg");
-  background-size: contain;
+  font-family: $Oswald;
+  background-image: url("../img/index/index-background.jpg");
+  background-size: 100% 302px;
   background-repeat: no-repeat;
   background-position: top;
-  color: $primary-background-color;
+  color: $color-white;
   text-align: center;
 }
-
 
 .program__title {
   font-size: 36px;

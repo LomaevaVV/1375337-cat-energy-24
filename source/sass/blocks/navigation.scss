@@ -1,11 +1,6 @@
 .navigation {
-  width: 320px;
-  // Position закоментирован для тек удобства работы!
-  // position: absolute;
-  bottom: -205px;
   display: flex;
-  // display: none;
-  background-color: $primary-background-color;
+  background-color: $color-white;
 }
 
 .navigation__list {
@@ -18,13 +13,13 @@
 }
 
 .navigation__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
+  color: $color-black;
 }
 
 .navigation__item {
@@ -35,5 +30,5 @@
 }
 
 .navigation__item:not(:last-child) {
-  border-bottom: 1px solid $navigation-border-color;
+  border-bottom: 1px solid $color-grey-300;
 }

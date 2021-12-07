@@ -1,10 +1,10 @@
 .show-more__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $show-more-title-color;
+  color: $color-grey-900;
   text-align: center;
 }
 
@@ -12,5 +12,5 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: $secondary-font-color;
+  color: $color-grey-700;
 }
