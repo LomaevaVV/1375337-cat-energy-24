@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  background-color: $color-green-400;
+  font-family: $Oswald;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.button--catalog {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--catalog-more {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-grey-700;
+  background-color: $color-grey-100;
+}

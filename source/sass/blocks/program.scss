@@ -1,0 +1,24 @@
+.program {
+  font-family: $Oswald;
+  background-image: url("../img/index/index-background.jpg");
+  background-size: 100% 302px;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: $color-white;
+  text-align: center;
+}
+
+.program__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+.program__slogan {
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.program__image {
+  margin-bottom: 3px;
+}

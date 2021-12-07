@@ -1,0 +1,18 @@
+.promo {
+  display: flex;
+  align-items: center;
+  min-height: 290px;
+  background-image: url("../img/index/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-white;
+}
+
+.promo__slogan {
+  padding-left: 58px;
+  padding-right: 61px;
+}

@@ -1,0 +1,33 @@
+.principles__list {
+  padding: 0;
+}
+
+.principles__section-title {
+  margin-bottom: 40px;
+}
+
+.principles__item {
+  list-style: none;
+  display: flex;
+}
+
+.principles__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.principles__text {
+  display: flex;
+  margin: 0;
+  line-height: 18px;
+  color: $color-grey-700;
+}
+
+.principles__text::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: $color-green-400;
+  background-size: 50px;
+  margin-right: 29px;
+}

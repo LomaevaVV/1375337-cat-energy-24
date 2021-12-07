@@ -1,0 +1,27 @@
+/*Sticky-footer -> height of page*/
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: $Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-black;
+  background-color: $color-white;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
