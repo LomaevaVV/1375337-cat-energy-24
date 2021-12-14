@@ -1,10 +1,21 @@
 .images {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas: "images" "toggle";
+  justify-content: center;
   align-items: center;
+  padding-bottom: 25px;
+}
+
+.images__before {
+  grid-area: images;
+}
+
+.images__after {
+  grid-area: images;
 }
 
 .images__toggle-panel {
+  grid-area: toggle;
   display: flex;
   align-items: center;
   font-family: $Oswald;

@@ -11,6 +11,9 @@
   border: none;
   padding-top: 7px;
   padding-bottom: 7px;
+  padding-left: 73px;
+  padding-right: 73px;
+  word-break: break-word;
 }
 
 .button--catalog {
@@ -23,4 +26,11 @@
   line-height: 20px;
   color: $color-grey-700;
   background-color: $color-grey-100;
+}
+
+.button--program {
+  @media (min-width: $tablet-width) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
 }

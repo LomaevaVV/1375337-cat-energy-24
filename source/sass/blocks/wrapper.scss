@@ -1,3 +1,29 @@
 .wrapper {
   padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.wrapper--contacts {
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 80px;
+  }
+}
+
+.wrapper--example {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

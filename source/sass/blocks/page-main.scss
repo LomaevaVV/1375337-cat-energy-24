@@ -1,5 +1,9 @@
 .page-main__program {
   padding-top: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 135px;
+  }
 }
 
 .page-main__principles {
@@ -8,11 +12,10 @@
 
 .page-main__example {
   padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .page-main__contacts {
-  padding-top: 26px;
+  position: relative;
 }
 
 .page-main__title {
@@ -30,3 +33,4 @@
 .page-main__catalog {
   margin-bottom: 25px;
 }
+

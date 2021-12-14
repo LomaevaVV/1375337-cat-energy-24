@@ -1,15 +1,22 @@
 .navigation {
-  display: flex;
+  width: auto;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    background: transparent;
+  }
 }
 
 .navigation__list {
-  width: 100%;
   padding: 0;
   display: grid;
-  justify-items: center;
   list-style: none;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .navigation__link {
@@ -20,15 +27,33 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
+  word-break: break-word;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
 }
 
 .navigation__item {
-  width: 100%;
   text-align: center;
   padding-top: 22px;
   padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navigation__item:not(:last-child) {
   border-bottom: 1px solid $color-grey-300;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-right: 35px;
+  }
 }

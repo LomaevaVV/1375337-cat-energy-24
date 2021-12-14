@@ -1,12 +1,30 @@
 .example {
   background-color: $color-grey-200;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $color-white  65%, $color-grey-200 65%);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to bottom, $color-white  30%, $color-grey-200 30%);
+  }
 }
 
 .example__section-title {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
   line-height: 18px;
   color: $color-grey-700;
+
+  @media (min-width: $desktop-width) {
+    max-width: 440px;
+  }
 }

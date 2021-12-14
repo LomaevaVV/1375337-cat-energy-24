@@ -6,4 +6,14 @@
   line-height: 18px;
   color: $color-grey-700;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+}
+
+.copyright__name {
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }

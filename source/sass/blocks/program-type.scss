@@ -1,8 +1,15 @@
 .program-type {
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .program-type__item {
+  display: grid;
   font-family: inherit;
   list-style: none;
   background-color: $color-grey-100;
@@ -11,9 +18,20 @@
   padding-right: 33px;
   padding-bottom: 18px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "title icon" "description icon" "link icon";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .program-type__title {
+  position: relative;
+  padding-left: 70px;
   display: flex;
   align-items: center;
   font-family: $Oswald;
@@ -22,9 +40,21 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+  word-break: break-word;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .program-type__title::before {
+  position: absolute;
+  left: 0;
   content: "";
   display: inline-block;
   width: 50px;
@@ -32,14 +62,28 @@
   background-color: $color-green-400;
   border-radius: 50%;
   margin-right: 29px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .program-type__description {
+  position: relative;
   color: $color-grey-700;
   line-height: 18px;
   padding-bottom: 23px;
   border-bottom: 1px solid $color-grey-500;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: description;
+    border: none;
+  }
 }
 
 .program-type__catalog-link {
@@ -50,4 +94,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    grid-area: link;
+  }
 }
