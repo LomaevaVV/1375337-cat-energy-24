@@ -10,6 +10,8 @@
 
 .program-type__item {
   display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-areas: "icon title" "description description" "link link";
   font-family: inherit;
   list-style: none;
   background-color: $color-grey-100;
@@ -20,18 +22,40 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 324px;
     grid-template-areas: "title icon" "description icon" "link icon";
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 162px 1fr;
+    grid-template-areas: "icon title" "description description" "link link";
+  }
+}
+
+.program-type__item::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: $color-green-400;
+  border-radius: 50%;
+  box-sizing: border-box;
+  justify-self: center;
+  grid-area: icon;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
   }
 }
 
 .program-type__title {
-  position: relative;
-  padding-left: 70px;
+  grid-area: title;
   display: flex;
   align-items: center;
   font-family: $Oswald;
@@ -43,7 +67,6 @@
   word-break: break-word;
 
   @media (min-width: $tablet-width) {
-    grid-area: title;
     padding-left: 0;
   }
 
@@ -52,28 +75,8 @@
   }
 }
 
-.program-type__title::before {
-  position: absolute;
-  left: 0;
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: $color-green-400;
-  border-radius: 50%;
-  margin-right: 29px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-  }
-}
-
 .program-type__description {
-  position: relative;
+  grid-area: description;
   color: $color-grey-700;
   line-height: 18px;
   padding-bottom: 23px;
@@ -81,12 +84,12 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    grid-area: description;
     border: none;
   }
 }
 
 .program-type__catalog-link {
+  grid-area: link;
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
@@ -94,8 +97,4 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-
-  @media (min-width: $tablet-width) {
-    grid-area: link;
-  }
 }

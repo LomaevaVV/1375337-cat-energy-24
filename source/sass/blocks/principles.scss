@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     column-gap: 153px;
     width: 100%;
   }
@@ -22,7 +22,6 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    width: 230px;
     min-height: 280px;
   }
 }
@@ -46,4 +45,5 @@
   background-color: $color-green-400;
   background-size: 50px;
   margin-right: 29px;
+  box-sizing: border-box;
 }

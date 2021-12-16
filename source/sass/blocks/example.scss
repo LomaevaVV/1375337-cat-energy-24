@@ -2,7 +2,7 @@
   background-color: $color-grey-200;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $color-white  65%, $color-grey-200 65%);
+    background-image: linear-gradient(to bottom, $color-white  65%, $color-grey-200 65%);
   }
 
   @media (min-width: $desktop-width) {

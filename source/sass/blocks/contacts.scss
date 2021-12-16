@@ -45,8 +45,4 @@
 .contacts__map {
   display: flex;
   height: 362px;
-
-  @media (min-width: $desktop-width) {
-    grid-area: contacts;
-  }
 }

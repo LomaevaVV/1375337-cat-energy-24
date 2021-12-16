@@ -10,7 +10,6 @@
 
 .navigation__list {
   padding: 0;
-  display: grid;
   list-style: none;
   margin: 0;
 
@@ -27,7 +26,6 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
-  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

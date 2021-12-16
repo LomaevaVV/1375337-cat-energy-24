@@ -1,21 +1,24 @@
 .images {
   display: grid;
-  grid-template-areas: "images" "toggle";
+  grid-template-rows: 1fr 40px;
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
 }
 
 .images__before {
-  grid-area: images;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 
 .images__after {
-  grid-area: images;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  z-index: 1;
 }
 
 .images__toggle-panel {
-  grid-area: toggle;
+  grid-row: 2/3;
   display: flex;
   align-items: center;
   font-family: $Oswald;
