@@ -1,8 +1,17 @@
 .program-type {
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .program-type__item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-areas: "icon title" "description description" "link link";
   font-family: inherit;
   list-style: none;
   background-color: $color-grey-100;
@@ -11,9 +20,41 @@
   padding-right: 33px;
   padding-bottom: 18px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 324px;
+    grid-template-areas: "title icon" "description icon" "link icon";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 162px 1fr;
+    grid-template-areas: "icon title" "description description" "link link";
+  }
+}
+
+.program-type__item::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: $color-green-400;
+  border-radius: 50%;
+  justify-self: center;
+  grid-area: icon;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .program-type__title {
+  grid-area: title;
   display: flex;
   align-items: center;
   font-family: $Oswald;
@@ -22,27 +63,32 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
-}
+  word-break: break-word;
 
-.program-type__title::before {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: $color-green-400;
-  border-radius: 50%;
-  margin-right: 29px;
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .program-type__description {
+  grid-area: description;
   color: $color-grey-700;
   line-height: 18px;
   padding-bottom: 23px;
   border-bottom: 1px solid $color-grey-500;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .program-type__catalog-link {
+  grid-area: link;
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;

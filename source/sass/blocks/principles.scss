@@ -1,14 +1,29 @@
-.principles__list {
-  padding: 0;
-}
-
 .principles__section-title {
   margin-bottom: 40px;
+}
+
+.principles__list {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    column-gap: 153px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 94px;
+  }
 }
 
 .principles__item {
   list-style: none;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+  }
 }
 
 .principles__item:not(:last-child) {

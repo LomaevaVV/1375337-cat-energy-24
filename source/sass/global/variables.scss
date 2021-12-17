@@ -1,7 +1,7 @@
 // Сolors
 $color-black: #000000;
 $color-white: #ffffff;
-// Grey
+// Сolor-Grey
 $color-grey-100: #f2f2f2;
 $color-grey-200: #eaeaea;
 $color-grey-300: #e6e6e6;
@@ -11,9 +11,19 @@ $color-grey-600: #cdcdcd;
 $color-grey-700: #444444;
 $color-grey-800: #222222;
 $color-grey-900: #111111;
-// Green
+// Сolor-Green
 $color-green-400: #68b738;
 
 // Fonts
 $Oswald: "Oswald", sans-serif;
 $Arial: "Arial", sans-serif;
+
+// Viewports
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1320px;
+
+//Main-padding
+$mobile-padding: 20px;
+$tablet-padding: 30px;
+$desktop-padding: 50px;

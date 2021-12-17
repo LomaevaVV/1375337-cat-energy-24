@@ -3,8 +3,7 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 
-// Blocs
-// Index
+//Blocks
 @import "blocks/wrapper.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
@@ -24,12 +23,8 @@
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";
 @import "blocks/title.scss";
-
-// Form
 @import "blocks/form.scss";
 @import "blocks/fieldset.scss";
-
-// Catalog
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
 @import "blocks/feature.scss";

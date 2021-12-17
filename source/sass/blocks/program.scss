@@ -1,4 +1,6 @@
 .program {
+  display: grid;
+  justify-content: center;
   font-family: $Oswald;
   background-image: url("../img/index/index-background.jpg");
   background-size: 100% 302px;
@@ -6,19 +8,83 @@
   background-position: top;
   color: $color-white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 500px;
+  }
+}
+
+.program__wrapper {
+  display: grid;
+  grid-template-areas: "title" "slogan" "button";
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
 }
 
 .program__title {
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 137px;
+    width: 60%;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+  }
 }
 
 .program__slogan {
   text-transform: uppercase;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: slogan;
+    padding-left: 137px;
+    width: 60%;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+  }
 }
 
 .program__image {
   margin-bottom: 3px;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
+    grid-area: button / slogan / title;
+  }
+}
+
+.program__button {
+  @media (min-width: $tablet-width) {
+    margin-left: 137px;
+    margin-bottom: auto;
+    grid-area: button;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: button;
+  }
 }

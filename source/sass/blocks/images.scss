@@ -1,10 +1,24 @@
 .images {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 40px;
+  justify-content: center;
   align-items: center;
+  padding-bottom: 25px;
+}
+
+.images__before {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.images__after {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  z-index: 1;
 }
 
 .images__toggle-panel {
+  grid-row: 2/3;
   display: flex;
   align-items: center;
   font-family: $Oswald;
@@ -22,7 +36,6 @@
   width: 86px;
   height: 14px;
   border: 1px solid $color-grey-600;
-  box-sizing: border-box;
   border-radius: 6px;
   background-color: $color-white;
   margin-right: 13px;

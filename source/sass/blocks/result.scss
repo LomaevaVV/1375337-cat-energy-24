@@ -1,45 +1,98 @@
 .result {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  justify-content: center;
   align-items: center;
   font-family: $Oswald;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// KG and time
+.result__in-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
 .result__group {
-  position: relative;
+  justify-self: center;
+  padding-top: 14px;
+  width: 124px;
   display: flex;
-  margin-bottom: 50px;
+  flex-direction: column-reverse;
 }
 
 .result__name {
-  position: absolute;
-  bottom: -30px;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
   color: $color-grey-700;
-  text-align: center;
-}
 
-.result__name-cost {
-  margin-right: 5px;
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .result__value {
+  justify-self: center;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .result__value--number {
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
+// COST of result
+
 .result__group--cost {
+  flex-direction: row;
+  width: auto;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
-  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    text-align: end;
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+    flex-direction: row;
+  }
+}
+
+.result__name-cost {
+  margin-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
+}
+
+.result__value--cost {
+  justify-self: end;
 }
