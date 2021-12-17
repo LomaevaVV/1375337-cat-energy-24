@@ -1,5 +1,10 @@
 .page-header {
   border-bottom: 1px solid $color-grey-300;
+}
+
+.page-header__wrapper-outer {
+  max-width: $desktop-width;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,18 +18,19 @@
   border-bottom: 1px solid $color-grey-300;
   padding-top: 10px;
   padding-bottom: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
   background: transparent;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    padding: 0 30px;
+    padding: 0 $tablet-padding;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 $desktop-padding;
+    max-width: $desktop-width;
   }
 }
 
@@ -53,10 +59,10 @@
 
 .page-header__navigation {
   @media (min-width: $tablet-width) {
-    padding-right: 30px;
+    padding-right: $tablet-padding;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 110px;
+    padding-right: $desktop-padding;
   }
 }

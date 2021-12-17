@@ -1,14 +1,26 @@
+.page-footer {
+  background: $color-grey-100;
+}
+
 .page-footer__wrapper {
   display: grid;
   padding-top: 40px;
   padding-bottom: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background: $color-grey-100;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+  max-width: $desktop-width;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
   }
 }
 

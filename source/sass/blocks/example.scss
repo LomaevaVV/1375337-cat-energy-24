@@ -6,14 +6,23 @@
   }
 
   @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, $color-white  30%, $color-grey-200 30%);
+  }
+}
+
+.example__wrapper-outer {
+  max-width: $desktop-width;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: linear-gradient(to bottom, $color-white  30%, $color-grey-200 30%);
   }
 }
 
 .example__section-title {
   margin-bottom: 40px;
+  background: inherit;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 146px;

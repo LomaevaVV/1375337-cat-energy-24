@@ -13,6 +13,11 @@
   padding-bottom: 7px;
   padding-left: 73px;
   padding-right: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .button--catalog {

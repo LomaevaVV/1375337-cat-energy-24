@@ -75,14 +75,11 @@
 }
 
 .program__button {
-  max-width: 300px;
-
   @media (min-width: $tablet-width) {
     margin-left: 137px;
     margin-bottom: auto;
     grid-area: button;
     width: 244px;
-    min-height: 54px;
     font-size: 20px;
     line-height: 20px;
   }

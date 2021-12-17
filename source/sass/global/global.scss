@@ -5,7 +5,6 @@ html {
 
 body {
   min-width: 320px;
-  max-width: 1440px;
   min-height: 100%;
   font-family: $Arial;
   font-style: normal;
@@ -22,10 +21,10 @@ body {
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, $color-white  50%, $color-green-300 50%), url("../img/index/index-background.jpg");
-    background-repeat: no-repeat, no-repeat;
+    background-image: linear-gradient(to right, $color-white  50%, rgba($color-green-400, 0.85) 50%), url("../img/index/index-background.jpg");
+    background-repeat: no-repeat;
     background-size: 100% 696px, 720px 696px;
-    background-position: right top, right top;
+    background-position: right top;
   }
 }
 
@@ -38,4 +37,10 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

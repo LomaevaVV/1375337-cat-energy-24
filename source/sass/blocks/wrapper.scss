@@ -1,24 +1,20 @@
 .wrapper {
-  padding: 0 20px;
+  padding: 0 $mobile-padding;
   margin: 0 auto;
-  box-sizing: border-box;
+  max-width: $desktop-width;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 $tablet-padding;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 $desktop-padding;
   }
 }
 
 .wrapper--contacts {
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 80px;
   }
 }
 
