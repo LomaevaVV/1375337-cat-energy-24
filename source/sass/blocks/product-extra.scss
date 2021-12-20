@@ -1,3 +1,45 @@
 .product-extra {
   text-decoration: none;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas: "title feature" "button button";
+    grid-template-columns: 2fr 1fr;
+    // column-gap: auto;
+    padding: 27px 38px;
+    border: 1px solid $color-grey-600;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    grid-template-areas: "title feature button";
+    grid-template-columns: 245px 1fr 245px;
+    column-gap: 80px;
+    border: none;
+    border-bottom: 1px solid $color-grey-600;
+  }
+}
+
+.product-extra:first-child {
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $color-grey-600;
+  }
+}
+
+.product-extra__link {
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+  }
+}
+
+.product-extra__feature-extra {
+  @media (min-width: $tablet-width) {
+    grid-area: feature;
+  }
+}
+
+.product-extra__button {
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+  }
 }

@@ -31,7 +31,9 @@
     font-size: 18px;
     line-height: 24px;
   }
+}
 
+.navigation__link--index {
   @media (min-width: $desktop-width) {
     color: $color-white;
   }

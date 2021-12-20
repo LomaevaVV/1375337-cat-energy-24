@@ -1,6 +1,38 @@
-.product__link {
+.product {
+  display: grid;
+  grid-template-areas: "image title" "image feature" "button button";
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas: "image" "title" "feature" "button";
+    background-image: linear-gradient(to bottom, $color-white  80px, $color-grey-200 80px);
+    padding: 39px;
+  }
+}
+
+.product__link-image {
+  align-self: center;
+  justify-self: center;
+  grid-area: image;
+  margin: 0;
+  min-width: 120px;
+  height: 112px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 168px;
+  }
+}
+
+.product__link-title {
+  grid-area: title;
   text-decoration: none;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+  }
 }
 
 .product__title {
@@ -11,4 +43,18 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $color-grey-800;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.product__feature {
+  grid-area: feature;
+}
+
+.product__button {
+  grid-area: button;
 }

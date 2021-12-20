@@ -2,4 +2,18 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-700;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature-extra__value {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

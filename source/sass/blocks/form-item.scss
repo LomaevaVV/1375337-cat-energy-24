@@ -1,0 +1,11 @@
+.form-item {
+  width: 100%;
+  min-height: 46px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+}
+
+.form-item__input {
+  height: 100%;
+}

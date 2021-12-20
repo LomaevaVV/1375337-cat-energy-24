@@ -23,6 +23,11 @@
 .button--catalog {
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
 }
 
 .button--catalog-more {
@@ -30,6 +35,11 @@
   line-height: 20px;
   color: $color-grey-700;
   background-color: $color-grey-100;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .button--program {

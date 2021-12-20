@@ -1,7 +1,31 @@
+.extra {
+  display: grid;
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas: "title title" "list promo";
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+    margin-bottom: 76px;
+  }
+}
+
+.extra__section-title {
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+  }
+}
+
 .extra__product-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 54px;
+  margin: 0;
+  margin-bottom: 69px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: list;
+    margin: 0;
+  }
 }
 
 .product-extra__link {
@@ -15,4 +39,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-grey-800;
+}
+
+.extra__promo {
+  @media (min-width: $desktop-width) {
+    grid-area: promo;
+  }
 }
