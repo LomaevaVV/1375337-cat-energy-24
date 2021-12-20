@@ -1,6 +1,5 @@
 .program {
   display: grid;
-  justify-content: center;
   font-family: $Oswald;
   background-image: url("../img/index/index-background.jpg");
   background-size: 100% 302px;
@@ -22,7 +21,7 @@
 .program__wrapper {
   display: grid;
   grid-template-areas: "title" "slogan" "button";
-  justify-content: center;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     justify-content: start;

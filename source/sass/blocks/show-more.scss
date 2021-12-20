@@ -16,6 +16,8 @@
   text-transform: uppercase;
   color: $color-grey-900;
   text-align: center;
+  margin: 0;
+  margin-bottom: 23px;
 }
 
 .show-more__description {
@@ -23,6 +25,6 @@
   line-height: 16px;
   text-align: center;
   color: $color-grey-700;
-  margin-bottom: 30px;
+  margin-bottom: auto;
   margin-top: 0;
 }
