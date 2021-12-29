@@ -13,24 +13,6 @@
   }
 }
 
-.catalog__product-wrapper {
-  border-top: 1px solid $color-grey-400;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-
-    &--show-more {
-      padding-top: 80px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--show-more {
-      padding-top: 80px;
-    }
-  }
-}
-
 .catalog__product {
   padding: 0 $mobile-padding;
   padding-top: 19px;
@@ -41,5 +23,8 @@
   padding: 0 $mobile-padding;
   padding-top: 78px;
   padding-bottom: 25px;
-  min-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
 }

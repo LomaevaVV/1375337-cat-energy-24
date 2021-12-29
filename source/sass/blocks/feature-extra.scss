@@ -3,7 +3,8 @@
   line-height: 16px;
   color: $color-grey-700;
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: 1fr 80px;
+  gap: 12px;
   justify-content: space-between;
   width: 100%;
 }

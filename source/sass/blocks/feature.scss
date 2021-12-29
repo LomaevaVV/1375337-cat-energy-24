@@ -7,7 +7,9 @@
 .feature__group {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
+
 
 .feature__value {
   justify-self: end;

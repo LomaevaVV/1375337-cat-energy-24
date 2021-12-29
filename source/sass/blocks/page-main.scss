@@ -19,7 +19,7 @@
 }
 
 .page-main__description {
-  font-family: $Oswald;
+  font-family: $oswald;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
@@ -28,4 +28,12 @@
 
 .page-main__catalog-index {
   margin-bottom: 25px;
+}
+
+.page-main__extra {
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }

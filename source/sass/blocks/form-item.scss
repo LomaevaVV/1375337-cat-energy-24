@@ -1,11 +1,16 @@
 .form-item {
   width: 100%;
-  min-height: 46px;
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
 }
 
+.form-item__label {
+  margin-right: 13px;
+  max-width: 150px;
+}
+
 .form-item__input {
-  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
