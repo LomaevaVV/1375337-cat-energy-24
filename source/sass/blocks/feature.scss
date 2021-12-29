@@ -3,3 +3,15 @@
   line-height: 16px;
   color: $color-grey-700;
 }
+
+.feature__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+
+.feature__value {
+  justify-self: end;
+  width: max-content;
+}

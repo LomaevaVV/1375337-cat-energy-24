@@ -1,11 +1,29 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $color-grey-100;
+    padding: 39px;
+    padding-top: 150px;
+  }
+}
+
 .show-more__title {
-  font-family: $Oswald;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-grey-900;
   text-align: center;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .show-more__description {
@@ -13,4 +31,10 @@
   line-height: 16px;
   text-align: center;
   color: $color-grey-700;
+  margin-bottom: 21px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
 }

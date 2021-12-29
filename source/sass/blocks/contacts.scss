@@ -1,3 +1,11 @@
+.contacts {
+  background-color: $color-grey-100;
+}
+
+.contacts--index {
+  background-color: $color-white;
+}
+
 .contacts__wrapper {
   position: relative;
 }
@@ -6,11 +14,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  background-color: $color-white;
   padding-top: 26px;
   padding-bottom: 26px;
 
   @media (min-width: $desktop-width) {
+    background-color: $color-white;
     position: absolute;
     left: $desktop-padding;
     top: 95px;
@@ -19,7 +27,7 @@
 }
 
 .contacts__title {
-  font-family: $Oswald;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

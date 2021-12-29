@@ -1,12 +1,11 @@
 .page-header {
-  border-bottom: 1px solid $color-grey-300;
-}
-
-.page-header__wrapper-outer {
   max-width: $desktop-width;
   margin: 0 auto;
 
+  border-bottom: 1px solid $color-grey-300;
+
   @media (min-width: $tablet-width) {
+    border: none;
     display: flex;
   }
 }

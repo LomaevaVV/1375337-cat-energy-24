@@ -1,33 +1,3 @@
-/*Sticky-footer -> height of page*/
-html {
-  height: 100%;
-}
-
-body {
-  min-width: 320px;
-  min-height: 100%;
-  font-family: $Arial;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: $color-black;
-  background-color: $color-white;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, $color-white  50%, rgba($color-green-400, 0.85) 50%), url("../img/index/index-background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 696px, 720px 696px;
-    background-position: right top;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

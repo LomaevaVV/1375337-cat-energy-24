@@ -1,14 +1,21 @@
 .fieldset {
+  display: grid;
   border: none;
-  font-family: $Oswald;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   padding: 0;
   padding-bottom: 20px;
-  border-bottom: 1px solid $color-grey-300;
-  margin-bottom: 20px;
+}
+
+.fieldset--cat-info {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    align-items: center;
+  }
 }
 
 .fieldset__legend {
@@ -19,23 +26,37 @@
 }
 
 .fieldset__list {
+  display: grid;
   list-style: none;
   padding-left: 0;
   margin: 0;
   padding-bottom: 13px;
 }
 
+.fieldset__list--contacts {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    align-items: center;
+  }
+}
+
+.fieldset__list--extra {
+  grid-template-columns: repeat(auto-fill, minmax(221px, 1fr));
+  column-gap: 60px;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+  }
+}
+
+
 .fieldset__list:not(:last-child) {
-  border-bottom: 1px solid $color-grey-300;
   margin-bottom: 13px;
 }
 
 .fieldset__form-item {
   color: $color-grey-700;
-}
-
-.form-item__label {
-  margin-right: 13px;
 }
 
 .fieldset__form-item:not(:last-child) {
@@ -44,4 +65,13 @@
 
 .fieldset__checkbox:not(:last-child) {
   margin-bottom: 13px;
+}
+
+.fieldset__textarea {
+  width: 100%;
+  min-height: 150px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+  }
 }

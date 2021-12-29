@@ -1,18 +1,37 @@
+.extra {
+  display: grid;
+  padding-top: 76px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas: "title title title title" "list list list promo";
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.extra__section-title {
+  margin-top: 0;
+  margin-bottom: 76px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+  }
+}
+
 .extra__product-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 54px;
+  margin: 0;
+  margin-bottom: 69px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: list;
+    margin: 0;
+  }
 }
 
-.product-extra__link {
-  text-decoration: none;
-}
-
-.product-extra__title {
-  font-family: $Oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $color-grey-800;
+.extra__promo {
+  @media (min-width: $desktop-width) {
+    grid-area: promo;
+  }
 }
