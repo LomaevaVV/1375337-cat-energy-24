@@ -20,7 +20,8 @@
 
 .program__wrapper {
   display: grid;
-  grid-template-areas: "title" "slogan" "button";
+  grid-template-rows: min-content min-content 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -35,11 +36,14 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 137px;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    padding-left: 87px;
     width: 60%;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
+    max-width: 501px;
   }
 }
 
@@ -48,12 +52,14 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    grid-area: slogan;
-    padding-left: 137px;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding-left: 87px;
     width: 60%;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
+    max-width: 501px;
   }
 }
 
@@ -63,28 +69,29 @@
   align-self: center;
 
   @media (min-width: $tablet-width) {
-    grid-area: button;
+    grid-row: 3/4;
+    grid-column: 1/-1;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    justify-self: end;
-    grid-area: button / slogan / title;
+    margin-left: 448px;
+    margin-right: auto;
+    grid-row: 1/-1;
+    z-index: -1;
   }
 }
 
 .program__button {
   @media (min-width: $tablet-width) {
-    margin-left: 137px;
+    margin-left: 87px;
     margin-bottom: auto;
-    grid-area: button;
-    width: 244px;
-    // max-width: 45%;
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    min-width: 244px;
+    max-width: 414px;
+    margin-right: auto;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-area: button;
   }
 }

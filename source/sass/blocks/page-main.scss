@@ -12,6 +12,7 @@
 
 .page-main__example {
   padding-top: 25px;
+  padding-bottom: 50px;
 }
 
 .page-main__title {
@@ -31,6 +32,7 @@
 }
 
 .page-main__extra {
+  padding-top: 76px;
   margin-bottom: 35px;
 
   @media (min-width: $desktop-width) {

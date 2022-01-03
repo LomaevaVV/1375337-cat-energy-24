@@ -1,5 +1,5 @@
 .principles__section-title {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .principles__list {
@@ -7,9 +7,10 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, 230px);
     column-gap: 153px;
-    width: 100%;
+    min-width: 633px;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,9 +21,48 @@
 .principles__item {
   list-style: none;
   display: flex;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
+  }
+}
+
+.principles__item::after {
+  @media (min-width: $tablet-width) {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: $color-grey-100;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 0;
+  }
+}
+
+.principles__item--leaf::after {
+  @media (min-width: $tablet-width) {
+    content: "1";
+  }
+}
+
+.principles__item--tub::after {
+  @media (min-width: $tablet-width) {
+    content: "2";
+  }
+}
+
+.principles__item--eat::after {
+  @media (min-width: $tablet-width) {
+    content: "3";
+  }
+}
+
+.principles__item--alarm::after {
+  @media (min-width: $tablet-width) {
+    content: "4";
   }
 }
 
@@ -31,18 +71,49 @@
 }
 
 .principles__text {
-  display: flex;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
   margin: 0;
   line-height: 18px;
   color: $color-grey-700;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr;
+    gap: 30px;
+    align-items: start;
+  }
 }
 
 .principles__text::before {
   content: "";
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: $color-green-400;
-  background-size: 50px;
-  margin-right: 29px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.principles__item--leaf .principles__text::before {
+  background-image: url("../img/index/principles_icon_leaf.svg");
+}
+
+.principles__item--tub .principles__text::before {
+  background-image: url("../img/index/principles_icon_tub.svg");
+}
+
+.principles__item--eat .principles__text::before {
+  background-image: url("../img/index/principles_icon_eat.svg");
+}
+
+.principles__item--alarm .principles__text::before {
+  background-image: url("../img/index/principles_icon_alarm.svg");
 }

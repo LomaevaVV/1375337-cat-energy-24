@@ -1,6 +1,4 @@
 .program-type {
-  padding: 0;
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,7 +8,7 @@
 
 .program-type__item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 70px 1fr;
   grid-template-areas: "icon title" "description description" "link link";
   font-family: inherit;
   list-style: none;
@@ -22,8 +20,13 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 324px;
+    grid-template-columns: 1fr 268px;
     grid-template-areas: "title icon" "description icon" "link icon";
+    column-gap: 20px;
+    padding-left: 53px;
+    padding-top: 77px;
+    padding-right: 28px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,18 +42,49 @@
   height: 50px;
   background-color: $color-green-400;
   border-radius: 50%;
-  justify-self: center;
+  padding-left: 2px;
   grid-area: icon;
 
   @media (min-width: $tablet-width) {
+    justify-self: center;
     width: 200px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
+    justify-self: start;
     width: 100px;
     height: 100px;
   }
+}
+
+.program-type__item::before {
+  background-repeat: no-repeat;
+  content: "";
+  background-position: center;
+  grid-area: icon;
+  width: 67px;
+  height: 50px;
+  z-index: 1;
+  margin-left: -7px;
+  align-self: center;
+  justify-self: start;
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
+}
+
+.program-type__item--slim::before {
+  background-image: url("../img/index/cat-slim.svg");
+}
+
+.program-type__item--pro::before {
+  background-image: url("../img/index/cat-pro.svg");
 }
 
 .program-type__title {
@@ -67,10 +101,8 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 70px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -84,6 +116,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin-bottom: 25px;
   }
 }
 
@@ -96,4 +129,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -31,6 +31,7 @@
   border-bottom: 1px solid $color-grey-500;
   display: flex;
   justify-content: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     border: 0;

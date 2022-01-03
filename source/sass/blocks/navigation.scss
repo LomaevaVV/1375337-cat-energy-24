@@ -2,9 +2,30 @@
   width: auto;
   background-color: $color-white;
 
+
   @media (min-width: $tablet-width) {
-    margin-left: auto;
     background: transparent;
+  }
+}
+
+// Mobile-menu-open-close
+.navigation--opened {
+  position: absolute;
+  width: 100%;
+  min-width: $mobole-width;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    min-width: unset;
+    width: unset;
+  }
+}
+
+.navigation--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: unset;
   }
 }
 

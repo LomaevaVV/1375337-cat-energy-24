@@ -1,6 +1,5 @@
 .extra {
   display: grid;
-  padding-top: 76px;
 
   @media (min-width: $desktop-width) {
     grid-template-areas: "title title title title" "list list list promo";

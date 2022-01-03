@@ -2,13 +2,11 @@
   display: grid;
   grid-template-areas: "image title" "image feature" "button button";
   width: 100%;
-  margin: 0 auto;
   border-top: 1px solid $color-grey-400;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "image" "title" "feature" "button";
     background-image: linear-gradient(to bottom, $color-white  80px, $color-grey-200 80px);
-    padding: 39px;
     border: none;
   }
 }
