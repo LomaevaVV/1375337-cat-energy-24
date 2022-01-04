@@ -33,6 +33,7 @@
     background-color: $color-white;
     padding: 56px 80px;
     width: 565px;
+    gap: 80px;
   }
 }
 
@@ -66,6 +67,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

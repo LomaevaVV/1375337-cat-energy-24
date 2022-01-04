@@ -26,10 +26,16 @@
 
 .catalog__show-more {
   padding: 0 $mobile-padding;
-  padding-top: 78px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    border: 2px solid $color-grey-100;
     margin-top: 80px;
+    padding-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px;
+    padding-top: 52px;
   }
 }

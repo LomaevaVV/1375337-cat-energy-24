@@ -1,8 +1,8 @@
-.extra {
+.extra__wrapper {
   display: grid;
 
   @media (min-width: $desktop-width) {
-    grid-template-areas: "title title title title" "list list list promo";
+    grid-template-areas: "list list list promo";
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
   }
@@ -10,7 +10,7 @@
 
 .extra__section-title {
   margin-top: 0;
-  margin-bottom: 76px;
+  margin-bottom: 36px;
 
   @media (min-width: $desktop-width) {
     grid-area: title;

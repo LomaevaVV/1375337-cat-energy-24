@@ -2,12 +2,23 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .feature__group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-grey-600;
+    padding-top: 5px;
+    padding-bottom: 9px;
+  }
 }
 
 
