@@ -39,7 +39,7 @@
 
 .result__name {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 100%;
   text-transform: lowercase;
   color: $color-grey-700;
   text-align: center;
@@ -88,6 +88,8 @@
 .result__group--cost {
   flex-direction: row;
   width: auto;
+  font-family: $oswald;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin: 0 auto;
@@ -96,7 +98,7 @@
     justify-self: end;
     flex-direction: column;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
     margin: 0;
   }
 
@@ -111,10 +113,12 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 5px;
+    margin-bottom: 0;
   }
 }
 

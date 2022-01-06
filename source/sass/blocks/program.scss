@@ -23,6 +23,7 @@
   grid-template-rows: min-content min-content 1fr;
   grid-template-columns: 1fr;
   width: 100%;
+  min-height: 499px;
 
   @media (min-width: $tablet-width) {
     justify-content: start;

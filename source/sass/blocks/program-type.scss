@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: 70px 1fr;
   grid-template-areas: "icon title" "description description" "link link";
+  row-gap: 22px;
   font-family: inherit;
   list-style: none;
   background-color: $color-grey-100;
@@ -20,21 +21,23 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 268px;
-    grid-template-areas: "title icon" "description icon" "link icon";
-    column-gap: 20px;
+    grid-template-columns: 1fr 80px 1fr;
+    grid-template-areas: "title title icon" "description description icon" "link link icon";
+    row-gap: 24px;
     padding-left: 53px;
-    padding-top: 77px;
+    padding-top: 10px;
     padding-right: 28px;
-    padding-bottom: 53px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 162px 1fr;
     grid-template-areas: "icon title" "description description" "link link";
+    padding-top: 41px;
   }
 }
 
+// GREEN CIRCLE
 .program-type__item::after {
   content: "";
   display: inline-block;
@@ -42,11 +45,14 @@
   height: 50px;
   background-color: $color-green-400;
   border-radius: 50%;
-  padding-left: 2px;
+  margin-left: 2px;
   grid-area: icon;
+  align-self: center;
+
 
   @media (min-width: $tablet-width) {
     justify-self: center;
+    align-self: center;
     width: 200px;
     height: 200px;
   }
@@ -58,20 +64,20 @@
   }
 }
 
+// BLACK CAT
 .program-type__item::before {
-  background-repeat: no-repeat;
   content: "";
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   grid-area: icon;
-  width: 67px;
-  height: 50px;
   z-index: 1;
-  margin-left: -7px;
-  align-self: center;
+  align-self: start;
   justify-self: start;
 
   @media (min-width: $tablet-width) {
     justify-self: center;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,17 +86,48 @@
 }
 
 .program-type__item--slim::before {
+  width: 50px;
+  height: 53px;
   background-image: url("../img/index/cat-slim.svg");
+  margin-top: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    margin-top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    margin-left: 20px;
+    margin-top: -10px;
+  }
 }
 
 .program-type__item--pro::before {
+  width: 67px;
+  height: 50px;
+  margin-left: -10px;
   background-image: url("../img/index/cat-pro.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    margin-left: -15px;
+  }
 }
 
+// TITLE
 .program-type__title {
   grid-area: title;
   display: flex;
-  align-items: center;
+  align-self: center;
   font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
@@ -100,23 +137,33 @@
   word-break: break-word;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    padding-top: 67px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
   }
 }
 
 .program-type__description {
   grid-area: description;
+  display: flex;
   color: $color-grey-700;
   line-height: 18px;
-  padding-bottom: 23px;
-  border-bottom: 1px solid $color-grey-500;
-  margin-bottom: 15px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    border: none;
-    margin-bottom: 25px;
+    padding-right: 10px;
+    min-height: 120px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    min-height: initial;
   }
 }
 
@@ -129,22 +176,31 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  padding-right: 100px;
+  padding-top: 15px;
+  border-top: 1px solid $color-grey-500;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
+    border: none;
+    padding-bottom: 53px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-
 .program-type__catalog-link::after {
   content: "";
-  display: inline-block;
-  width: 32px;
+  display: flex;
+  width: 24px;
   height: 10px;
-  background: url("../img/index/icon_arrow.svg");
+  background-image: url("../img/index/icon_arrow.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
   margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.program-type__catalog-link:hover::after {
+  width: 32px;
 }

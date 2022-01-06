@@ -51,7 +51,6 @@
   height: 40px;
   width: 40px;
   background-color: $color-white;
-  background-image: url("../img/header/menu_button_close.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -62,8 +61,16 @@
   }
 }
 
+.page-header__toggle--opened {
+  background-image: url("../img/header/menu_button_close.svg");
+}
+
 .page-header__toggle--closed {
   background-image: url("../img/header/menu_button_open.svg");
+}
+
+.page-header__toggle--nojs {
+  display: none;
 }
 
 .page-header__navigation {

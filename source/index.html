@@ -18,12 +18,12 @@
         <img class="logo__logo-text" src="img/logo/logo_text.svg" width="101" height="18" alt="Cat energy"
           aria-hidden="true" />
       </a>
-      <button class="page-header__toggle" type="button">
+      <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
     <!-- Главная навигация -->
-    <nav class="page-header__navigation navigation">
+    <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
       <ul class="navigation__list navigation__list--index">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
@@ -37,26 +37,6 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Menu open/close script -->
-  <script>
-    var navMain = document.querySelector('.navigation');
-    var navToggle = document.querySelector('.page-header__toggle');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('navigation--closed')) {
-        navMain.classList.remove('navigation--closed');
-        navMain.classList.add('navigation--opened');
-        navToggle.classList.remove('page-header__toggle--closed');
-      } else {
-        navMain.classList.add('navigation--closed');
-        navMain.classList.remove('navigation--opened');
-        navToggle.classList.add('page-header__toggle--closed');
-      }
-    });
-
-  </script>
-
   <main class="page-main">
     <h1 class="visually-hidden">Кэт энерджи</h1>
     <!-- Подбор программы -->
@@ -111,7 +91,7 @@
             <p class="principles__text ">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="principles__item principles__item--alarm">
-            <p class="principles__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="principles__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
           </li>
         </ol>
       </div>
@@ -150,17 +130,15 @@
           <img src="img/index/example_after_mobile.png" width="243" height="232" alt="Стройный кот Борис"
             class="images__after" />
           <div class="images__toggle-panel">
-            <span class="images__toggle-text">Было</span>
+            <button class="images__toggle-range-button">Было</button>
             <!-- Шкала целиком -->
             <div class="images__toggle">
-              <!-- Шкала выделенная -->
-              <div class="images__range">
-                <button class="images__toggle-button">
-                  <span class="visually-hidden">Изменить изображение кота с Было на Стало</span>
-                </button>
-              </div>
+              <!-- Кнопка -->
+              <button class="images__toggle-button">
+                <span class="visually-hidden">Изменить изображение кота с Было на Стало</span>
+              </button>
             </div>
-            <span class="images__toggle-text">Стало</span>
+            <button class="images__toggle-range-button">Стало</button>
           </div>
         </div>
       </div>
@@ -233,5 +211,7 @@
     </div>
   </footer>
 </body>
+<!-- Mobile-navigation open/close script -->
+<script src="../js/navigation_open_close.js"></script>
 
 </html>

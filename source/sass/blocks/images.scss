@@ -22,19 +22,32 @@
 
 .images__toggle-panel {
   grid-row: 2/3;
-  display: flex;
   justify-self: center;
-  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 86px 1fr;
+  column-gap: 13px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 426px 1fr;
+  }
+}
+
+.images__toggle-range-button {
+  border: none;
+  background: transparent;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-}
+  padding: 0;
 
-.images__toggle-text:not(:last-of-type) {
-  margin-right: 13px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $color-grey-650;
+  }
 }
 
 .images__toggle {
@@ -45,22 +58,26 @@
   border: 1px solid $color-grey-600;
   border-radius: 6px;
   background-color: $color-white;
-  padding-left: 6px;
-  padding-top: 3px;
+  padding: 0 6px;
+  align-content: center;
+  justify-content: start;
   margin-right: 13px;
 
   @media (min-width: $tablet-width) {
+    justify-content: center;
     width: 426px;
     height: 6px;
-    background: $color-grey-650;
+    background: $color-grey-450;
   }
 }
 
-.images__range {
+.images__toggle-button {
   width: 36px;
   height: 6px;
   background: $color-green-400;
   border-radius: 6px;
+  border: none;
+  display: grid;
 
   @media (min-width: $tablet-width) {
     background: $color-white;
@@ -68,13 +85,12 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    margin-top: -18px;
     justify-self: center;
     position: relative;
   }
 }
 
-.images__range::after {
+.images__toggle-button::after {
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
@@ -82,10 +98,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    top: 35%;
+    align-self: center;
+    justify-self: center;
   }
-}
-
-.images__toggle-button {
-  border: none;
 }

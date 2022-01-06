@@ -26,8 +26,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: unset;
-    gap: unset;
+    grid-template-columns: auto;
+    gap: 0;
     text-align: center;
     align-items: center;
   }
@@ -38,7 +38,7 @@
   display: block;
   width: 80px;
   height: 80px;
-  background: url("../../img/catalog/promo_icon_gift.svg");
+  background-image: url("../img/catalog/promo_icon_gift.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;

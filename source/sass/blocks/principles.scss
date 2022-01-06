@@ -4,17 +4,16 @@
 
 .principles__list {
   padding: 0;
+  counter-reset: principle_number;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 230px);
-    column-gap: 153px;
-    min-width: 633px;
-    margin-right: auto;
+    grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
+    column-gap: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 94px;
+    grid-template-columns: repeat(4, minmax(230px, 1fr));
   }
 }
 
@@ -25,11 +24,18 @@
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 
 .principles__item::after {
   @media (min-width: $tablet-width) {
+    counter-increment: principle_number;
+    content: counter(principle_number) "";
     font-family: $oswald;
     font-weight: 400;
     font-size: 280px;
@@ -37,32 +43,13 @@
     color: $color-grey-100;
     position: absolute;
     z-index: -1;
-    left: 50%;
+    left: calc((95% - 80px) / 2);
     top: 0;
-  }
-}
 
-.principles__item--leaf::after {
-  @media (min-width: $tablet-width) {
-    content: "1";
-  }
-}
-
-.principles__item--tub::after {
-  @media (min-width: $tablet-width) {
-    content: "2";
-  }
-}
-
-.principles__item--eat::after {
-  @media (min-width: $tablet-width) {
-    content: "3";
-  }
-}
-
-.principles__item--alarm::after {
-  @media (min-width: $tablet-width) {
-    content: "4";
+    @media (min-width: $desktop-width) {
+      right: 0;
+      left: auto;
+    }
   }
 }
 

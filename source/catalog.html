@@ -18,17 +18,17 @@
         <img class="logo__logo-text" src="img/logo/logo_text.svg" width="101" height="18" alt="Cat energy"
           aria-hidden="true" />
       </a>
-      <button class="page-header__toggle" type="button">
+      <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
     <!-- Главная навигация -->
-    <nav class="page-header__navigation navigation">
+    <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item ">
           <a class="navigation__link navigation__link--current" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
@@ -37,26 +37,6 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Menu open/close script -->
-  <script>
-    var navMain = document.querySelector('.navigation');
-    var navToggle = document.querySelector('.page-header__toggle');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('navigation--closed')) {
-        navMain.classList.remove('navigation--closed');
-        navMain.classList.add('navigation--opened');
-        navToggle.classList.remove('page-header__toggle--closed');
-      } else {
-        navMain.classList.add('navigation--closed');
-        navMain.classList.remove('navigation--opened');
-        navToggle.classList.add('page-header__toggle--closed');
-      }
-    });
-
-  </script>
-
   <main class="page-main">
     <div class="page-main__wrapper wrapper">
       <h1 class="page-main__title title">Каталог продукции</h1>
@@ -386,5 +366,6 @@
     </div>
   </footer>
 </body>
-
+<!-- Mobile-navigation open/close script -->
+<script src="../js/navigation_open_close.js"></script>
 </html>

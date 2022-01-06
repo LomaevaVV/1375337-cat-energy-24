@@ -1,23 +1,14 @@
-.navigation {
-  width: auto;
-  background-color: $color-white;
-
-
-  @media (min-width: $tablet-width) {
-    background: transparent;
-  }
-}
-
 // Mobile-menu-open-close
 .navigation--opened {
   position: absolute;
   width: 100%;
-  min-width: $mobole-width;
+  min-width: $mobile-width;
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     position: static;
-    min-width: unset;
-    width: unset;
+    min-width: auto;
+    width: auto;
   }
 }
 
@@ -25,7 +16,20 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: unset;
+    display: flex;
+  }
+}
+
+.navigation--nojs {
+  position: static;
+  display: block;
+  width: 100%;
+  background-color: $color-white;
+
+
+  @media (min-width: $tablet-width) {
+    background: transparent;
+    width: auto;
   }
 }
 

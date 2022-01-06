@@ -4,7 +4,7 @@
 }
 
 .page__body {
-  min-width: $mobole-width;
+  min-width: $mobile-width;
   min-height: 100%;
   font-family: $arial;
   font-style: normal;
@@ -23,9 +23,10 @@
 
 .page__body--index {
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, $color-white  50%, rgba($color-green-400, 0.85) 50%), url("../img/index/index-background.jpg");
+    background-image: url("../img/index/index_background_desktop.jpg"), linear-gradient(to right, $color-white  50%, $color-green-600 50%);
     background-repeat: no-repeat;
-    background-size: 100% 696px, 720px 696px;
+    background-size: 660px 694px, 100% 694px;
     background-position: right top;
+    border: none;
   }
 }
