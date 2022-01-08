@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   min-height: 290px;
-  background-image: url("../img/index/index-background.jpg");
+  background-image: url("../img/catalog/catalog_promo.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -13,6 +13,33 @@
 }
 
 .promo__slogan {
+  display: grid;
   padding-left: 58px;
   padding-right: 61px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 80px 180px;
+    gap: 265px;
+    text-align: start;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto;
+    gap: 0;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.promo__slogan::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/catalog/promo_icon_gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
 }

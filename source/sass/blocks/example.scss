@@ -29,11 +29,40 @@
   }
 }
 
+.example__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 148px;
+  }
+}
+
 .example__description {
   line-height: 18px;
   color: $color-grey-700;
+  margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
     max-width: 440px;
+    margin-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__result {
+  padding-bottom: 25px;
+}
+
+.example__images {
+  padding-bottom: 25px;
 }

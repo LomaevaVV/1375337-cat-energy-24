@@ -1,29 +1,36 @@
 .product {
   display: grid;
   grid-template-areas: "image title" "image feature" "button button";
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin: 0 auto;
   border-top: 1px solid $color-grey-400;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "image" "title" "feature" "button";
+    grid-template-columns: 1fr;
     background-image: linear-gradient(to bottom, $color-white  80px, $color-grey-200 80px);
-    padding: 39px;
     border: none;
   }
 }
 
 .product__link-image {
-  align-self: center;
-  justify-self: center;
   grid-area: image;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   min-width: 120px;
-  height: 112px;
+  min-height: 112px;
   text-align: center;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     height: 168px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
   }
 }
 
@@ -45,16 +52,24 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $color-grey-800;
+  margin: 0;
+  width: 76px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    width: 145px;
   }
 }
 
 .product__feature {
   grid-area: feature;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    margin-top: 0;
+  }
 }
 
 .product__button {

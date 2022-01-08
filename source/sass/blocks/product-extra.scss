@@ -1,10 +1,13 @@
 .product-extra {
   text-decoration: none;
   display: grid;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $color-grey-400;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "title feature" "button button";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 27px 38px;
     border: 1px solid $color-grey-600;
   }
@@ -20,6 +23,8 @@
 }
 
 .product-extra:first-child {
+  border-top: 1px solid $color-grey-400;
+
   @media (min-width: $tablet-width) {
     border-top: 1px solid $color-grey-600;
   }

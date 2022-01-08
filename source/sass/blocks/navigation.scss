@@ -1,10 +1,35 @@
-.navigation {
-  width: auto;
+// Mobile-menu-open-close
+.navigation--opened {
+  position: absolute;
+  width: 100%;
+  min-width: $mobile-width;
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    margin-left: auto;
+    position: static;
+    min-width: auto;
+    width: auto;
+  }
+}
+
+.navigation--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.navigation--nojs {
+  position: static;
+  display: block;
+  width: 100%;
+  background-color: $color-white;
+
+
+  @media (min-width: $tablet-width) {
     background: transparent;
+    width: auto;
   }
 }
 

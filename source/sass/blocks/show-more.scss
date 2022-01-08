@@ -1,12 +1,6 @@
 .show-more {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    border: 2px solid $color-grey-100;
-    padding: 39px;
-    padding-top: 150px;
-  }
 }
 
 .show-more__title {
@@ -23,6 +17,28 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    width: 167px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+}
+
+.show-more__title::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/catalog/catalog-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin-bottom: 49px;
   }
 }
 
@@ -35,6 +51,10 @@
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin: 0 auto;
     margin-bottom: 87px;
   }
 }
