@@ -10,7 +10,6 @@
 
 .fieldset--cat-info {
   max-width: $desktop-width;
-  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
@@ -27,6 +26,10 @@
   width: 100%;
   text-transform: initial;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .fieldset__list {
