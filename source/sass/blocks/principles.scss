@@ -35,7 +35,7 @@
 .principles__item::after {
   @media (min-width: $tablet-width) {
     counter-increment: principle_number;
-    content: counter(principle_number) "";
+    content: counter(principle_number);
     font-family: $oswald;
     font-weight: 400;
     font-size: 280px;
