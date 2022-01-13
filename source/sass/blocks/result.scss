@@ -7,7 +7,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: calc(50% + 80px) 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +38,7 @@
 }
 
 .result__name {
+  font-family: $arial;
   font-size: 12px;
   line-height: 100%;
   text-transform: lowercase;
@@ -53,7 +54,9 @@
     font-size: 14px;
     line-height: 14px;
     background: $color-white;
+    margin: 0 auto;
     margin-top: -8px;
+    padding: 0 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,6 +74,11 @@
   padding-top: 14px;
   border: 1px solid $color-grey-600;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
 }
 
 .result__value--number {

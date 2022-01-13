@@ -9,6 +9,8 @@
 }
 
 .fieldset--cat-info {
+  max-width: $desktop-width;
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -16,11 +18,18 @@
   }
 }
 
-.fieldset__legend {
+.fieldset__wrapper {
+  width: 100%;
+}
+
+.fieldset__section-title {
+  width: 100%;
   text-transform: none;
   margin-bottom: 35px;
-  font-size: 24px;
-  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .fieldset__list {
@@ -28,7 +37,43 @@
   list-style: none;
   padding-left: 0;
   margin: 0;
-  padding-bottom: 13px;
+}
+
+.fieldset__list--program-type {
+  padding: 20px;
+  border-top: 1px solid $color-grey-500;
+  border-bottom: 1px solid $color-grey-500;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $color-grey-500;
+    margin: 0 70px;
+    padding: 25px 28px;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: $desktop-padding;
+  }
+}
+
+.fieldset__list--cat-info {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset--cat-info .wrapper--tablet-large {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .fieldset__list--contacts {
@@ -68,6 +113,14 @@
 .fieldset__textarea {
   width: 100%;
   min-height: 150px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-grey-700;
+  text-transform: uppercase;
+  padding: 13px;
+  border: 1px solid $color-grey-250;
 
   @media (min-width: $tablet-width) {
     min-height: 174px;

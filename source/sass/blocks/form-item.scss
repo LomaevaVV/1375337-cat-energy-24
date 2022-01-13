@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
+  position: relative;
 }
 
 .form-item__label {
@@ -11,6 +12,21 @@
 }
 
 .form-item__input {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-grey-700;
+  text-transform: uppercase;
+  padding: 13px;
+  padding-right: 40px;
+  border: 1px solid $color-grey-250;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.form-item__icon {
+  position: absolute;
+  fill: $color-grey-800;
+  right: 13px;
 }

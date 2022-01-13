@@ -1,10 +1,10 @@
 .program {
   display: grid;
   font-family: $oswald;
-  background-image: url("../img/index/index-background.jpg");
-  background-size: 100% 302px;
+  background-image: url("../img/index/index-background.jpg"), linear-gradient(to right, $color-green-600 50%, $color-green-700 50%);
+  background-size: 320px 302px, 100% 303px;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top, top left;
   color: $color-white;
   text-align: center;
 

@@ -2,10 +2,7 @@
   max-width: $desktop-width;
   margin: 0 auto;
 
-  border-bottom: 1px solid $color-grey-300;
-
   @media (min-width: $tablet-width) {
-    border: none;
     display: flex;
   }
 }

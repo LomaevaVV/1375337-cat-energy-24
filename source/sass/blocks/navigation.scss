@@ -70,13 +70,15 @@
   padding-bottom: 24px;
   padding-left: 0;
   padding-right: 0;
-}
-
-.navigation__item:not(:last-child) {
   border-bottom: 1px solid $color-grey-300;
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+}
+
+.navigation__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
     margin-right: 35px;
   }
 }
