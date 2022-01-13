@@ -19,11 +19,14 @@
   color: $color-grey-700;
   text-transform: uppercase;
   padding: 13px;
+  padding-right: 40px;
   border: 1px solid $color-grey-250;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .form-item__icon {
-  stroke: $color-grey-800;
   position: absolute;
+  fill: $color-grey-800;
   right: 13px;
 }
