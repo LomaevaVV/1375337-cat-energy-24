@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     grid-template-areas: "image" "title" "feature" "button";
     grid-template-columns: 1fr;
-    background-image: linear-gradient(to bottom, $color-white  80px, $color-grey-200 80px);
+    background-image: linear-gradient(to bottom, $color-white  110px, $color-grey-200 110px);
     border: none;
   }
 }
@@ -25,12 +25,23 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    height: 168px;
+    height: 208px;
+    align-items: flex-end;
     margin-bottom: 34px;
   }
+}
 
+.product__image-small {
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.product__image-big {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
   }
 }
 

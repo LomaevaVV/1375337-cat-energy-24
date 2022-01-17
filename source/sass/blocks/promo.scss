@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   min-height: 290px;
-  background-image: url("../img/catalog/catalog_promo.png");
+  background-image: url("../img/catalog/catalog_promo_small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,6 +10,26 @@
   line-height: 20px;
   text-align: center;
   color: $color-white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/catalog_promo_small@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/catalog/catalog_promo_tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/catalog_promo_tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/catalog/catalog_promo_small.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/catalog_promo_small@2x.jpg");
+    }
+  }
 }
 
 .promo__slogan {
