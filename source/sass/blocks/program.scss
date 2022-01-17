@@ -1,12 +1,16 @@
 .program {
   display: grid;
   font-family: $oswald;
-  background-image: url("../img/index/index-background.jpg"), linear-gradient(to right, $color-green-600 50%, $color-green-700 50%);
+  background-image: url("../img/index/index_bg_mobile.jpg"), linear-gradient(to right, $color-green-600 50%, $color-green-700 50%);
   background-size: 320px 302px, 100% 303px;
   background-repeat: no-repeat;
   background-position: top, top left;
   color: $color-white;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/index_bg_mobile@2x.jpg"), linear-gradient(to right, $color-green-600 50%, $color-green-700 50%);
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -34,9 +38,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0 auto;
   margin-bottom: 25px;
+  width: 250px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     grid-row: 1/2;
     grid-column: 1/-1;
     padding-left: 87px;
@@ -45,6 +52,10 @@
     line-height: 60px;
     text-align: start;
     max-width: 501px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
   }
 }
 
@@ -56,6 +67,7 @@
     grid-row: 2/3;
     grid-column: 1/-1;
     padding-left: 87px;
+    margin-bottom: 20px;
     width: 60%;
     font-size: 20px;
     line-height: 20px;
@@ -64,27 +76,44 @@
   }
 }
 
-.program__image {
-  margin-bottom: 3px;
+.program__picture {
+  width: 100%;
   justify-self: center;
   align-self: center;
+  display: grid;
 
   @media (min-width: $tablet-width) {
     grid-row: 3/4;
     grid-column: 1/-1;
-    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 448px;
-    margin-right: auto;
+    padding-left: 448px;
     grid-row: 1/-1;
     z-index: -1;
   }
 }
 
+.program__image {
+  margin: 0 auto;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    margin: 0;
+  }
+}
+
 .program__button {
   @media (min-width: $tablet-width) {
+    margin-top: 29px;
     margin-left: 87px;
     margin-bottom: auto;
     grid-row: 3/4;

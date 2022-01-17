@@ -5,6 +5,10 @@
   <meta charset="utf-8" />
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="../favicon.ico" sizes=""><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="../manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -13,8 +17,12 @@
     <div class="page-header__wrapper">
       <!-- Логотип -->
       <a href="index.html" class="page-header__logo logo">
-        <img class="logo__logo-image" src="img/logo/logo_icon_mobile.svg" width="34" height="38"
-          alt="Логотип Cat energy" />
+        <picture>
+          <source media="(min-width: 1320px)" srcset="img/logo/logo_icon_desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo_icon_tablet.svg">
+          <img class="logo__logo-image" src="img/logo/logo_icon_mobile.svg" width="34" height="38"
+            alt="Логотип Cat energy" />
+        </picture>
         <img class="logo__logo-text" src="img/logo/logo_text.svg" width="101" height="18" alt="Cat energy"
           aria-hidden="true" />
       </a>
@@ -44,8 +52,12 @@
       <div class="program__wrapper wrapper">
         <h2 class="program__title">Функциональное питание&nbsp;для&nbsp;котов</h2>
         <p class="program__slogan">Занялся собой? Займись котом!</p>
-        <img class="program__image" src="img/index/index_promo.png" width="280" height="270"
-          alt="Упаковка питания Кэт энереджи: курица." />
+        <picture class="program__picture">
+          <source media="(min-width: 1320px)" srcset="img/index/index_promo_desktop.png 1x, img/index/index_promo_desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/index_promo_tablet.png 1x, img/index/index_promo_tablet@2x.png 2x">
+          <img class="program__image" src="img/index/index_promo_mobile.png" srcset="img/index/index_promo_mobile@2x.png 2x" width="280" height="270"
+            alt="Упаковка питания Кэт энереджи: курица." />
+        </picture>
         <a href="form.html" class="program__button button">Подобрать программу</a>
       </div>
     </section>
@@ -125,10 +137,16 @@
           </div>
         </div>
         <div class="example__images images">
-          <img src="img/index/example_before_mobile.png" width="280" height="232" alt="Упитанный кот Борис"
-            class="images__before" />
-          <img src="img/index/example_after_mobile.png" width="243" height="232" alt="Стройный кот Борис"
-            class="images__after" />
+          <picture class="images__example images__example--before">
+            <source media="(min-width: 768px)" srcset="img/index/example_before_tablet.png 1x, img/index/example_before_tablet@2x.png 2x">
+            <img src="img/index/example_before_mobile.png" srcset="img/index/example_before_mobile@2x.png 2x" width="280" height="232" alt="Упитанный кот Борис"
+              class="images__before" />
+          </picture>
+          <picture class="images__example images__example--after">
+            <source media="(min-width: 768px)" srcset="img/index/example_after_tablet.png 1x, img/index/example_after_tablet@2x.png 2x">
+            <img src="img/index/example_after_mobile.png" srcset="img/index/example_after_mobile@2x.png 2x" width="243" height="232" alt="Стройный кот Борис"
+              class="images__after" />
+          </picture>
           <div class="images__toggle-panel">
             <button class="images__toggle-range-button">Было</button>
             <!-- Шкала целиком -->

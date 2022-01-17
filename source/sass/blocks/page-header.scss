@@ -21,11 +21,13 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
     padding: 0 $tablet-padding;
+    padding-top: 24px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 $desktop-padding;
+    padding-top: 53px;
     max-width: $desktop-width;
   }
 }
@@ -74,9 +76,11 @@
   @media (min-width: $tablet-width) {
     margin-left: auto;
     padding-right: $tablet-padding;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: $desktop-padding;
+    padding-top: 53px;
   }
 }

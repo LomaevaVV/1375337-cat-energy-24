@@ -1,3 +1,15 @@
 .logo__logo-text {
   justify-self: center;
 }
+
+.logo__logo-image {
+  @media (min-width: $tablet-width) {
+    height: 50px;
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 71px;
+    width: 60px;
+  }
+}
