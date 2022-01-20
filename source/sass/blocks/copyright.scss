@@ -17,3 +17,15 @@
     margin-right: 22px;
   }
 }
+
+.copyright__icon {
+  fill: $color-grey-670;
+}
+
+.copyright:hover .copyright__icon {
+  fill: $color-green-400;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}

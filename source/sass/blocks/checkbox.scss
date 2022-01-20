@@ -32,6 +32,22 @@
   border-radius: 50%;
 }
 
+.checkbox__input:hover ~ .checkbox__label::before {
+  border-color: $color-grey-640;
+}
+
+.checkbox__input:active ~ .checkbox__label {
+  opacity: 0.3;
+}
+
+.checkbox__input:active ~ .checkbox__label::before {
+  opacity: 0.3;
+}
+
+.checkbox__input:active ~ .checkbox__label::after {
+  opacity: 0.3;
+}
+
 .checkbox__input[type="checkbox"]:checked ~ .checkbox__label::before {
   background-image: url("../img/form/icon_checkbox.svg");
 }

@@ -17,6 +17,14 @@
     padding-top: 14px;
     padding-bottom: 14px;
   }
+
+  &:hover {
+    background-color: $color-green-800;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
 }
 
 .button--small {
@@ -29,4 +37,12 @@
   line-height: 20px;
   color: $color-grey-700;
   background-color: $color-grey-100;
+
+  &:hover {
+    background-color: $color-grey-400;
+  }
+
+  &:active {
+    color: rgba($color-grey-700, 0.3);
+  }
 }

@@ -23,10 +23,31 @@
   border: 1px solid $color-grey-250;
   z-index: 1;
   background-color: transparent;
+
+  &:hover {
+    border: 1px solid $color-grey-600;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-grey-700;
+    outline: unset;
+  }
 }
 
 .form-item__icon {
   position: absolute;
   fill: $color-grey-800;
   right: 13px;
+}
+
+.form-item__input:focus-visible ~ .form-item__icon {
+  fill: $color-green-400;
+}
+
+.form-item__input--invalid {
+  border: 2px solid $color-red-400;
+}
+
+.form-item__input--invalid ~ .form-item__icon {
+  fill: $color-red-400;
 }
