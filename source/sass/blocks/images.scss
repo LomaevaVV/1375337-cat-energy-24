@@ -84,6 +84,10 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $color-grey-650;
+
+    &:hover {
+      border-bottom: 1px solid $color-grey-650;
+    }
   }
 }
 
@@ -119,11 +123,21 @@
   @media (min-width: $tablet-width) {
     background: $color-white;
     border: 1px solid $color-grey-600;
+    box-shadow: 0 1px 3px rgba($color-black, 0.16);
     width: 34px;
     height: 34px;
     border-radius: 50%;
     justify-self: center;
     position: relative;
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba($color-black, 0.19);
+    }
+
+    &:active {
+      border-color: $color-green-400;
+      box-shadow: 0 3px 5px rgba($color-black, 0.2);
+    }
   }
 }
 

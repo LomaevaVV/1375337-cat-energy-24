@@ -10,3 +10,15 @@
   height: 40px;
   place-content: center;
 }
+
+.social-list__icon {
+  fill: $color-grey-670;
+}
+
+.social-list__link:hover .social-list__icon--vk {
+  fill: $color-green-400;
+}
+
+.social-list__link:active {
+  opacity: 0.3;
+}

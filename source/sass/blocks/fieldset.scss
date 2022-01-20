@@ -106,6 +106,12 @@
   margin-bottom: 13px;
 }
 
+.fieldset__list--contacts .fieldset__form-item {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .fieldset__checkbox:not(:last-child) {
   margin-bottom: 13px;
 }
