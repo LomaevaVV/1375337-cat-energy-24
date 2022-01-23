@@ -28,7 +28,7 @@
     border: 1px solid $color-grey-600;
   }
 
-  &:focus-visible {
+  &:focus {
     border: 1px solid $color-grey-700;
     outline: unset;
   }
@@ -40,7 +40,7 @@
   right: 13px;
 }
 
-.form-item__input:focus-visible ~ .form-item__icon {
+.form-item__input:focus ~ .form-item__icon {
   fill: $color-green-400;
 }
 
