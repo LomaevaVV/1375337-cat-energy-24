@@ -1,19 +1,15 @@
 .product-extra {
   text-decoration: none;
   display: grid;
-  padding-top: 13px;
-  padding-bottom: 19px;
   border-bottom: 1px solid $color-grey-400;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "title feature" "button button";
     grid-template-columns: 1fr 1fr;
-    padding: 27px 38px;
     border: 1px solid $color-grey-600;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
     grid-template-areas: "title gap feature feature button";
     grid-template-columns: 1fr 80px 1fr 80px 1fr;
     column-gap: 0;
@@ -45,16 +41,45 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-grey-800;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+    margin-bottom: 28px;
+  }
 }
 
 .product-extra__feature-extra {
+  margin: 0;
+  margin-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     grid-area: feature;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    margin-top: 20px;
   }
 }
 
 .product-extra__button {
   @media (min-width: $tablet-width) {
+    margin-top: 8px;
     grid-area: button;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 13px;
+    grid-area: button;
+    margin-bottom: 14px;
   }
 }

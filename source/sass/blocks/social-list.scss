@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.social-list__item:not(:last-child) {
+  margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+}
+
 .social-list__link {
   display: grid;
   width: 40px;
@@ -13,6 +21,27 @@
 
 .social-list__icon {
   fill: $color-grey-670;
+}
+
+.social-list__icon--vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social-list__icon--insta {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social-list__icon--fb {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }
 
 .social-list__link:hover .social-list__icon {
