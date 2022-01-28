@@ -10,10 +10,15 @@
 
 .extra__section-title {
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-area: title;
+    margin-bottom: 80px;
   }
 }
 
@@ -21,11 +26,29 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-area: list;
     margin: 0;
+  }
+}
+
+.extra__product-extra {
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 38px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 

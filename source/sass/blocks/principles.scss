@@ -1,5 +1,11 @@
-.principles__section-title {
-  margin-bottom: 32px;
+.principles__title {
+  margin-bottom: 43px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
 }
 
 .principles__list {
@@ -9,11 +15,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
-    column-gap: 80px;
+    column-gap: 60px;
+    row-gap: 17px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, minmax(230px, 1fr));
+    column-gap: 80px;
+    margin: 0;
   }
 }
 
@@ -55,6 +64,10 @@
 
 .principles__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .principles__text {
@@ -66,10 +79,11 @@
   color: $color-grey-700;
 
   @media (min-width: $tablet-width) {
+    line-height: 24px;
     padding-top: 40px;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 1fr;
-    gap: 30px;
+    gap: 32px;
     align-items: start;
   }
 }

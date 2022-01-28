@@ -10,6 +10,20 @@
 
 .logo__logo-text {
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 22px;
+  }
+}
+
+.logo__logo-text--footer {
+  width: 128px;
+  height: 24px;
 }
 
 .logo__logo-image {

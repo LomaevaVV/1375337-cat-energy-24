@@ -4,7 +4,7 @@
 
 .page-footer__wrapper {
   display: grid;
-  padding-top: 40px;
+  padding-top: 39px;
   padding-bottom: 22px;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
@@ -16,18 +16,21 @@
     align-items: center;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
+    padding-top: 58px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
+    padding-top: 54px;
   }
 }
 
 .page-footer__social-list {
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $color-grey-500;
   display: flex;
   justify-content: center;

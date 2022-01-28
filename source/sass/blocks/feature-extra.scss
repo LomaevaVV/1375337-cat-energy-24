@@ -1,5 +1,5 @@
 .feature-extra {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   color: $color-grey-700;
   display: grid;
@@ -9,7 +9,9 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 93px;
+    grid-template-columns: 1fr 83px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,5 +30,6 @@
 
   @media (min-width: $desktop-width) {
     text-align: start;
+    margin-top: 10px;
   }
 }

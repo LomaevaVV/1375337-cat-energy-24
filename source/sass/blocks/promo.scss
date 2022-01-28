@@ -1,7 +1,7 @@
 .promo {
   display: flex;
   align-items: center;
-  min-height: 290px;
+  min-height: 200px;
   background-image: url("../img/catalog/catalog_promo_small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,13 +36,16 @@
   display: grid;
   padding-left: 58px;
   padding-right: 61px;
-  margin: 0 auto;
+  margin: 43px auto;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 80px 180px;
     gap: 265px;
     text-align: start;
     align-items: center;
+    padding-left: 36px;
+    padding-right: 61px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +53,7 @@
     gap: 0;
     text-align: center;
     align-items: center;
+    padding: 0 30px;
   }
 }
 
@@ -61,5 +65,15 @@
   background-image: url("../img/catalog/promo_icon_gift.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+  }
 }

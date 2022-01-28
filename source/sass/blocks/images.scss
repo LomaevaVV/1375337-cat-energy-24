@@ -7,7 +7,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 50% 50%;
     width: 591px;
-    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 538px 40px;
   }
 }
 
@@ -16,12 +19,18 @@
   grid-column: 1/2;
   justify-self: center;
   align-self: center;
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+    align-self: start;
+  }
 }
 
 .images__example--before {
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin-top: -5px;
   }
 }
 
@@ -61,12 +70,20 @@
   justify-self: center;
   display: grid;
   grid-template-columns: 1fr 86px 1fr;
-  column-gap: 13px;
+  column-gap: 17px;
   align-items: center;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-template-columns: 1fr 426px 1fr;
+    margin-top: 50px;
+    column-gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    column-gap: 20px;
   }
 }
 
@@ -103,7 +120,7 @@
   border: 1px solid $color-grey-600;
   border-radius: 6px;
   background-color: $color-white;
-  padding: 0 6px;
+  padding: 0 5px;
   align-content: center;
   justify-content: start;
   margin-right: 13px;

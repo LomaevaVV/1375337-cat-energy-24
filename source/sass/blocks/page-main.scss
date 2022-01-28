@@ -1,41 +1,96 @@
 .page-main__program {
-  padding-top: 36px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+  }
 
   @media (min-width: $desktop-width) {
+    padding-top: 18px;
     margin-bottom: 135px;
   }
 }
 
 .page-main__principles {
   margin-bottom: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .page-main__example {
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 27px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 18px;
+  }
 }
 
 .page-main__title {
+  margin-top: 28px;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 64px;
+    margin-bottom: 54px;
+  }
 }
 
 .page-main__description {
+  max-width: 450px;
   font-family: $oswald;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .page-main__catalog-index {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .page-main__extra {
-  padding-top: 76px;
+  padding-top: 23px;
   margin-bottom: 35px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    margin-bottom: 73px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    padding-top: 79px;
+    margin-bottom: 92px;
   }
 }
