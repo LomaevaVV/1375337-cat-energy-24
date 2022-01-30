@@ -10,9 +10,9 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="../manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="reload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="reload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="reload" href="img/logo/logo_text.svg" as="image">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="img/logo/logo_text.svg" as="image" crossorigin>
 </head>
 
 <body class="page__body">
@@ -79,15 +79,15 @@
         <!-- Радиобаттон -->
         <ul class="fieldset__list fieldset__list--program-type">
           <li class="fieldset__checkbox checkbox">
-            <input type="radio" class="checkbox__input" name="weight-loss" id="weight-loss" checked>
+            <input type="radio" class="checkbox__input" name="program-type" id="weight-loss" checked>
             <label class="checkbox__label checkbox__label--radio" for="weight-loss">Похудение</label>
           </li>
           <li class="fieldset__checkbox checkbox">
-            <input type="radio" class="checkbox__input" name="weight-gain" id="weight-gain">
+            <input type="radio" class="checkbox__input" name="program-type" id="weight-gain">
             <label class="checkbox__label checkbox__label--radio" for="weight-gain">Набор массы</label>
           </li>
           <li class="fieldset__checkbox checkbox">
-            <input type="radio" class="checkbox__input" name="weight-recommendation" id="weight-recommendation">
+            <input type="radio" class="checkbox__input" name="program-type" id="weight-recommendation">
             <label class="checkbox__label checkbox__label--radio" for="weight-recommendation">Не знаю (Нужен ваш
               совет)</label>
           </li>
@@ -132,19 +132,19 @@
           <ul class="fieldset__list fieldset__list--extra">
             <li class="fieldset__checkbox checkbox">
               <input type="checkbox" class="checkbox__input" name="sweetener" id="sweetener" checked>
-              <label class="checkbox__label" for="sweetener">Cахарозаменитель</label>
+              <label class="checkbox__label checkbox__label--checkbox" for="sweetener">Cахарозаменитель</label>
             </li>
             <li class="fieldset__checkbox checkbox">
               <input type="checkbox" class="checkbox__input" name="water" id="water">
-              <label class="checkbox__label" for="water">Питьевая вода</label>
+              <label class="checkbox__label checkbox__label--checkbox" for="water">Питьевая вода</label>
             </li>
             <li class="fieldset__checkbox checkbox">
               <input type="checkbox" class="checkbox__input" name="milk" id="milk">
-              <label class="checkbox__label" for="milk">Молоко</label>
+              <label class="checkbox__label checkbox__label--checkbox" for="milk">Молоко</label>
             </li>
             <li class="fieldset__checkbox checkbox">
               <input type="checkbox" class="checkbox__input" name="vitamins" id="vitamins">
-              <label class="checkbox__label" for="vitamins">Витамины</label>
+              <label class="checkbox__label checkbox__label--checkbox" for="vitamins">Витамины</label>
             </li>
           </ul>
         </div>

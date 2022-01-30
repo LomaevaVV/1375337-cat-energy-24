@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "image" "title" "feature" "button";
+    grid-template-rows: min-content min-content 1fr min-content;
     grid-template-columns: 1fr;
     background-image: linear-gradient(to bottom, $color-white  110px, $color-grey-200 110px);
     border: none;

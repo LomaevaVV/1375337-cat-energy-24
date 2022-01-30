@@ -4,7 +4,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: 95px min-content 110px;
-    grid-template-columns: 1fr;
+    grid-template-columns: calc(50% - 565px - 41px) 565px 1fr;
     justify-content: start;
   }
 }
@@ -14,9 +14,6 @@
 }
 
 .contacts__wrapper {
-  grid-row: 2/3;
-  grid-column: 1/-1;
-  z-index: 1;
   justify-self: start;
   width: 100%;
   padding-top: 26px;
@@ -28,8 +25,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+    width: min-content;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    z-index: 1;
   }
 }
 

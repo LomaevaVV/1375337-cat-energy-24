@@ -34,7 +34,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    align-items: center;
+    align-items: start;
     margin-bottom: 67px;
   }
 }
@@ -104,6 +104,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    row-gap: 13px;
     align-items: center;
   }
 }
@@ -160,6 +161,15 @@
   padding: 13px;
   padding-top: 10px;
   border: 1px solid $color-grey-250;
+
+  &:hover {
+    border: 1px solid $color-grey-600;
+  }
+
+  &:focus {
+    border: 2px solid $color-grey-700;
+    outline: unset;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 174px;

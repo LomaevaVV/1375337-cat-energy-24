@@ -41,8 +41,16 @@
   border-radius: 50%;
 }
 
+.checkbox__label--checkbox::before {
+  align-self: start;
+}
+
 .checkbox__input:hover ~ .checkbox__label::before {
   border-color: $color-grey-640;
+}
+
+.checkbox__input:focus ~ .checkbox__label::before {
+  border: 2px solid $color-grey-700;
 }
 
 .checkbox__input:active ~ .checkbox__label {
