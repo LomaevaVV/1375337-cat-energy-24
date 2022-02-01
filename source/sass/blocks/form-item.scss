@@ -39,8 +39,7 @@
   }
 
   &:focus {
-    border: 2px solid $color-grey-700;
-    outline: unset;
+    outline: 2px solid $color-grey-700;
   }
 
   @media (min-width: $tablet-width) {
